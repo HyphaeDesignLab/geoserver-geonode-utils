@@ -1,0 +1,27 @@
+# 1. RENEW/ISSUE Certificate
+#  (to check which certs can be auto-renewed)
+sudo certbot renew
+
+# if cert needs to be remove and re-issued manually, do
+sudo certbot revoke --cert-path /etc/letsencrypt/live/geo.hyphae.design/cert.pem
+sudo certbot delete --cert-path /etc/letsencrypt/live/geo.hyphae.design/cert.pem
+
+
+# finally
+sudo certbot certonly --standalone
+
+# 2. Convert Certificate to Geoserver's JKS format in 2 steps
+openssl pkcs12 -export -inkey /etc/letsencrypt/live/geo.hyphae.design/privkey.pem -in /etc/letsencrypt/live/geo.hyphae.design/fullchain.pem -name test -out geo_hyphae_design.p12
+
+keytool -importkeystore -srckeystore geo_hyphae_design.p12 -srcstoretype pkcs12 -destkeystore geo_hyphae_design.jks
+
+# 3. Copy JKS cert (use ssl cert geoserver ssl password in 1pass)
+cp geo_hyphae_design.jks /opt/tomcat/conf/
+
+# 4. Restart Geoserver
+sudo /opt/tomcat/bin/shutdown.sh
+sudo /usr/bin/authbind --deep /opt/tomcat/bin/startup.sh
+
+# optional (update XML file if JKS filename/password has changed)
+sudo cat /opt/tomcat/conf/server.xml
+sudo vi /opt/tomcat/conf/server.xml

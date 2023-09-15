@@ -1,0 +1,2000 @@
+ls
+pwd
+sudo apt update && sudo apt dist-upgrade
+sudo apt autoremove && sudo apt autoclean
+sudo add-apt-repository ppa:ubuntugis/ppa
+sudo apt install software-properties-common
+sudo apt install vim
+sudo add-apt-repository ppa:ubuntugis/ppa
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 089EBE08314DF160
+sudo vim /etc/apt/sources.list.d/ubuntugis-ubuntu-ppa-mantic.list 
+sudo apt update && sudo apt dist-upgrade
+sudo add-apt-repository ppa:deadsnakes/ppa 
+sudo vim /etc/apt/sources.list.d/deadsnakes-ubuntu-ppa-mantic.list 
+sudo apt update && sudo apt dist-upgrade
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA6932366A755776
+sudo apt update && sudo apt dist-upgrade
+which python3
+which python3.10
+which python3.7
+which python3.9
+sudo apt install python3.10
+apt cache show python3.10
+apt-cache show python3.10
+apt-cache show python3.11
+sudo vim /etc/apt/sources.list.d/deadsnakes-ubuntu-ppa-mantic.list 
+sudo apt update && sudo apt dist-upgrade
+sudo apt install libpython3.9-minimal python3.9-minimal
+vim ~/.bash_profile
+vim ~/.bashrc
+source ~/.bashrc
+vim ~/.bashrc
+source ~/.bashrc
+sudo locale-gen
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LANG=en_US.UTF-8
+sudo apt install libpython3.9-minimal python3.9-minimal
+sudo apt autoremove
+sudo locale-genn
+sudo locale-gen
+sudo apt install locale-gen
+sudo dpkg --reconfigure locales
+sudo dpkg-reconfigure locales
+sudo vim /etc/default/locale
+sudo dpkg-reconfigure locales
+sudo apt install locales
+source /etc/environment
+sudo dpkg-reconfigure locales
+sudo apt update && sudo apt dist-upgrade
+sudo apt install python3.10
+sudo apt install python3-setuptools && sudo apt install python3-distutils && sudo apt install python3-dev
+sudo apt update && sudo apt dist-upgrade
+sudo apt install python3-setuptools && sudo apt install python3-distutils && sudo apt install python3-dev
+sudo apt install python3.9
+sudo apt install python3.9-stdlib
+sudo apt install python3-all-dev
+sudo dpkg --configure -a
+sudo apt -f install
+sudo apt install python3-all-dev
+sudo apt install python3.10-dev
+sudo apt install python3.10-venv
+sudo apt install virtualenvwrapper
+sudo apt -f install
+sudo dpkg --configure -a
+sudo apt -f install
+sudo dpkg --configure -a
+sudo apt -f install
+sudo apt install python3.10-venv
+c
+sudo apt install virtualenvwrapper
+sudo apt install --reinstall python3.9-stdlib
+apt-cache show python3.9-stdlib
+sudo apt install python3.9.16-1+focal1
+sudo apt install libpython3.9-stdlib_3.9.16-1+focal1
+sudo apt install libpython3.9-stdlib
+sudo apt install libmpdec2
+sudo apt install libc
+sudo apt install -y --allow-downgrades build-essential
+apt-cache show virtualenvwrapper
+sudo apt install virtualenvwrapper
+sudo apt install --reinstall python3.9
+history
+sudo apt intall --reinstall libpython3.9-minimal
+sudo apt install --reinstall libpython3.9-minimal
+apt-cache show virtualenvwrapper
+sudo apt install virtualenvwrapper
+sudo apt install libmpdec3
+sudo apt install virtualenvwrapper
+sudo apt install libmpdec-dev
+sudo apt install virtualenvwrapper
+sudo apt install --reinstall libpython3.9-stdlib
+sudo apt install libpython3-stdlib
+sudo dpkg -i --force-all /var/cache/apt/archives/libpython3.9-stdlib_3.9.12-1+bionic2_amd64.deb
+ls /var/cache/apt/archives/
+ls /var/cache/apt/archives/partial/
+sudo su
+sudo apt install virtualenvwrapper
+sudo apt install python3.9
+sudo dpkg --force-all --configure -a
+sudo dpkg --purge --force-depends libmpdec2
+sudo dpkg --purge --force-depends libpython3.9-stdlib
+sudo dpkg --purge --force-depends libpython3.9-minimal
+sudo apt --fix-broken install
+sudo apt -f install
+sudo apt install virtualenvwrapper
+apt-cache show python3.9
+sudo apt install python3.9-venv
+sudo apt install wget
+cd ~/
+wget https://mirrors.edge.kernel.org/debian/pool/main/p/python3.9/libpython3.9_3.9.2-1_amd64.deb
+ls
+apt-cache show python3.9-stdlib
+wget https://mirrors.edge.kernel.org/debian/pool/main/p/python3.9/libpython3.9-stdlib_3.9.2-1_amd64.deb
+sudo dpkg -i libpython3.9-stdlib_3.9.2-1_amd64.deb 
+sudo dpkg --configure -a
+sudo apt -f install
+sudo apt install virtualenvwrapper
+sudo dpkg -i libpython3.9_3.9.2-1_amd64.deb 
+sudo apt -f install
+sudo apt install virtualenvwrapper
+apt-cache show python3.9-stdlib
+sudo apt purge python3.10
+sudo apt autoremove --pure python3.10*
+sudo apt autoremove --pure python3.10
+sudo apt autoremove --purge python3.10*
+sudo apt install virtualenvwrapper
+sudo rm /etc/apt/sources.list.d/deadsnakes-ubuntu-ppa-mantic.list
+sudo apt update && sudo apt dist
+sudo apt update && sudo apt dist-upgrade
+sudo apt install python3.9
+apt-cache show python3.10
+sudo apt install -y --allow-downgrades build-essential
+sudo apt install libpython3.9-stdlib
+sudo apt install libpython3.9-distutils
+sudo apt install libpython3.9
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+history
+sudo vim /etc/apt/sources.list.d/deadsnakes-ubuntu-ppa-mantic.list
+history
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA6932366A755776
+sudo apt update
+sudo apt install python3.10-dev python3.10-venv
+sudo apt virtualevwrapper
+sudo apt virtualenvwrapper
+sudo apt install virtualenvwrapper
+sudo apt install python3-all-dev
+clear
+sudo apt install libproj-dev
+clear
+wget https://github.com/OSGeo/gdal/releases/download/v3.4.3/gdal-3.4.3.tar.gz
+tar -xzf gdal-3.4.3.tar.gz 
+cd gdal-3.4.3
+ls /usr/bin/
+ls /usr/bin/python
+ls /usr/bin/python3.10
+./configure --with-python=/usr/bin/python3.10
+./make -j4
+make -j4
+clear
+sudo amke instALL
+sudo amke install
+sudo make install
+sudo ldconfig
+whereis gdal
+gdal-config --version
+clear
+sudo apt install libxml2 libxml2-dev gettext libmemcached-dev zlib1g-dev
+sudo apt install libxslt1-dev libjpeg-dev libpng-dev libpq-dev
+sudo apt install software-properties-common build-essential 
+sudo apt install git unzip gcc zlib1g-dev libgeos-dev libproj-dev
+sudo apt install sqlite3 spatialite-bin libsqlite3-mod-spatialite libsqlite3-dev
+sudo apt install sudo apt install openjdk-11-jdk-headless default-jdk-headless -y
+sudo apt install openjdk-11-jdk-headless default-jdk-headless -y
+cd ..
+ls
+rm -Rf gdal-3.4.3 gdal-3.4.3.tar.gz libpython3.9_3.9.2-1_amd64.deb libpython3.9-stdlib_3.9.2-1_amd64.deb 
+ls
+ls -la
+clear
+gdalinfo --version
+python3.10 --version
+which python3.10
+java -version
+sudo apt update -y; sudo apt autoremove --purge
+export WORKON_HOME=~/.virtualenvs
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+mkvirtualenv --python=/usr/bin/python3.10 geonode 
+vim ~/.bashrc 
+sudo mkdir -p /opt/geonode/; sudo usermod -a -G www-data $USER; sudo chown -Rf $USER:www-data /opt/geonode/; sudo chmod -Rf 775 /opt/geonode/
+cd /opt; git clone https://github.com/GeoNode/geonode.git -b 4.1.x geonode
+cd geonode/
+clear
+ls
+vim .env
+pip install -r requirements.txt --upgrade
+sudo apt install python3.10-pip
+sudo apt install python3-pip
+vim .envpip install -e . --upgrade
+pip install -e . --upgrade
+pip install pygdal=="`gdal-config --version`.*"
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+sudo wget --no-check-certificate --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/
+sudo apt update
+sudo apt update -y; sudo apt install -y postgresql-13 postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13 postgresql-client-13
+sudo dpkg --configure -a
+sudo apt -f install
+apt-cache show python3-gdal
+apt-cache show dal-bin
+apt-cache show gdal-bin
+which gdal-bin
+whereis gdal-bin
+sudo apt install libgdal-dev
+sudo apt install gdal-bin
+sudo apt install gdal-data
+sudo dpkg --configure -a
+sudo apt -f install
+sudo apt update -y; sudo apt install -y postgresql-13 postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13 postgresql-client-13
+apt-cache show python3-gdal
+sudo apt install python3-gdal=3.2.2+dfsg-2+deb11u2
+sudo apt instal gdal-bin=3.2.2+dfsg-2+deb11u2
+sudo apt install gdal-bin=3.2.2+dfsg-2+deb11u2
+sudo apt update -y; sudo apt install -y postgresql-13 postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13 postgresql-client-13 && sudo apt --fix-broken install
+sudo apt --fix-broken install postgresql-13 postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13 postgresql-client-13
+ss -ltn
+sudo -u postgres createuser -P geonode
+cat .env
+sudo -u postgres createuser -P geonode
+sudo -u postgres createdb -O geonode geonode
+sudo -u postgres createdb -O geonode geonode_data
+sudo -u postgres psql -d geonode -c 'CREATE EXTENSION postgis;'
+sudo -u postgres psql -d geonode -c 'GRANT ALL ON geometry_columns TO PUBLIC;'
+sudo -u postgres psql -d geonode -c 'GRANT ALL ON spatial_ref_sys TO PUBLIC;'
+sudo -u postgres psql -d geonode -c 'GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO geonode;'
+sudo -u postgres psql -d geonode -c 'GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO geonode;'
+sudo -u postgres psql -d geonode_data -c 'CREATE EXTENSION postgis;'
+sudo -u postgres psql -d geonode_data -c 'GRANT ALL ON geometry_columns TO PUBLIC;'
+sudo -u postgres psql -d geonode_data -c 'GRANT ALL ON spatial_ref_sys TO PUBLIC;'
+sudo -u postgres psql -d geonode_data -c 'GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO geonode;'
+sudo -u postgres psql -d geonode_data -c 'GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO geonode;'
+sudo vim /etc/postgresql/13/main/pg_hba.conf
+sudo service postgresql restart
+psql -U postgres geonode
+psql -U geonode geonode
+sudo useradd -m -U -d /opt/tomcat -s /bin/bash tomcat
+sudo usermod -a -G www-data tomcat
+cd ~/
+VERSION=9.0.74; wget https://www-eu.apache.org/dist/tomcat/tomcat-9/v${VERSION}/bin/apache-tomcat-${VERSION}.tar.gz
+sudo mkdir /opt/tomcat
+sudo tar -xf apache-tomcat-${VERSION}.tar.gz -C /opt/tomcat/; rm apache-tomcat-${VERSION}.tar.gz
+sudo ln -s /opt/tomcat/apache-tomcat-${VERSION} /opt/tomcat/latest
+sudo chown -R tomcat:www-data /opt/tomcat/
+sudo sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'
+JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+echo $JAVA_HOME
+sudo ln -s /usr/lib/jvm/java-11-openjdk-amd64/jre/ /usr/lib/jvm/jre
+sudo vim /etc/systemd/system/tomcat9.service
+sudo systemctl daemon-reload
+sudo systemctl start tomcat9.service
+JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+echo $JAVA_HOME/
+sudo vim /etc/systemd/system/tomcat9.service
+sudo systemctl daemon-reload
+sudo systemctl start tomcat9.service
+ss -ltn
+hostname
+dig +short myip.opendns.com @resolver1.opendns.com
+curl https://ipinfo.io/ip ; echo
+sudo systemctl status tomcat9.service
+sudo systemctl enable tomcat9.service
+sudo apt install ufw
+sudo apt --fix-broken install ufw
+ufw
+systemctl --type=service
+systemctl list-units --type=service --state=active
+firewall-cmd --state
+sudo iptables
+sudo iptables -n -L 
+sudo iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+curl https://ipinfo.io/ip ; echo
+sudo mkdir -p /opt/data
+sudo chown -Rf $USER:www-data /opt/data
+sudo chmod -Rf 775 /opt/data
+sudo mkdir -p /opt/data/logs
+sudo chown -Rf $USER:www-data /opt/data/logs
+sudo chmod -Rf 775 /opt/data/logs
+GS_VERSION=2.23.0
+sudo wget --no-check-certificate "https://artifacts.geonode.org/geoserver/$GS_VERSION/geonode-geoserver-ext-web-app-data.zip" -O data-$GS_VERSION.zip
+sudo unzip data-$GS_VERSION.zip -d /opt/data/
+sudo mv /opt/data/data/ /opt/data/geoserver_data
+sudo chown -Rf tomcat:www-data /opt/data/geoserver_data
+sudo chmod -Rf 775 /opt/data/geoserver_data
+sudo mkdir -p /opt/data/geoserver_logs
+sudo chown -Rf tomcat:www-data /opt/data/geoserver_logs
+sudo chmod -Rf 775 /opt/data/geoserver_logs
+sudo mkdir -p /opt/data/gwc_cache_dir
+sudo chown -Rf tomcat:www-data /opt/data/gwc_cache_dir
+sudo chmod -Rf 775 /opt/data/gwc_cache_dir
+sudo wget --no-check-certificate "https://artifacts.geonode.org/geoserver/$GS_VERSION/geoserver.war" -O geoserver-$GS_VERSION.war
+sudo mv geoserver-$GS_VERSION.war /opt/tomcat/latest/webapps/geoserver.war
+sudo sed -i -e 's/xom-\*\.jar/xom-\*\.jar,bcprov\*\.jar/g' /opt/tomcat/latest/conf/catalina.properties
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+echo 'JAVA_HOME='$JAVA_HOME | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+sudo sed -i -e "s/JAVA_OPTS=/#JAVA_OPTS=/g" /opt/tomcat/latest/bin/setenv.sh
+echo 'GEOSERVER_DATA_DIR="/opt/data/geoserver_data"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+echo 'GEOSERVER_LOG_LOCATION="/opt/data/geoserver_logs/geoserver.log"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+echo 'GEOWEBCACHE_CACHE_DIR="/opt/data/gwc_cache_dir"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+echo 'GEOFENCE_DIR="$GEOSERVER_DATA_DIR/geofence"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+echo 'TIMEZONE="UTC"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+echo 'JAVA_OPTS="-server -Djava.awt.headless=true -Dorg.geotools.shapefile.datetime=false -DGS-SHAPEFILE-CHARSET=UTF-8 -XX:+UseParallelGC -XX:ParallelGCThreads=4 -Dfile.encoding=UTF8 -Duser.timezone=$TIMEZONE -Xms4096m -Xmx4096m -Djavax.servlet.request.encoding=UTF-8 -Djavax.servlet.response.encoding=UTF-8 -DGEOSERVER_CSRF_DISABLED=true -DPRINT_BASE_URL=http://localhost:8080/geoserver/pdf -DGEOSERVER_DATA_DIR=$GEOSERVER_DATA_DIR -Dgeofence.dir=$GEOFENCE_DIR -DGEOSERVER_LOG_LOCATION=$GEOSERVER_LOG_LOCATION -DGEOWEBCACHE_CACHE_DIR=$GEOWEBCACHE_CACHE_DIR -Dgwc.context.suffix=gwc"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+clear
+sudo systemctl restart tomcat9
+sudo tail -F -n 300 /opt/data/geoserver_logs/geoserver.log
+sudo less /opt/tomcat/latest/logs/catalina.out
+clear
+sudo apt install -y nginx uwsgi uwsgi-plugin-python3
+sudo apt install nginx-core
+sudo dpkg --configure -a
+sudo apt -f install
+sudo apt install -f nginx uwsgi uwsgi-plugin-python3
+sudo apt --fix-broken install
+sudo rm -Rf /var/cache/apt/archives/gdal-data_3.4.3+dfsg-1~jammy0_all.deb
+sudo apt install -f nginx uwsgi uwsgi-plugin-python3
+sudo apt --fix-broken install
+sudo dpkg-deb -Zxz -b
+sudo dpkg-deb -Zxz -b /var/cache/apt/archives/gdal-data_3.4.3+dfsg-1~jammy0_all.deb
+sudo dpkg-deb -Zxz -b /var/cache/apt/archives/
+sudo apt update
+sudo apt upgr
+sudo apt upgrade
+sudo apt install --reinstall gdal-data
+
+sudo rm /var/cache/apt/archives/gdal-data_3.4.3+dfsg-1~jammy0_all.deb
+sudo apt install -f nginx uwsgi uwsgi-plugin-python3
+sudo dpkg-deb -Zxz -b /var/cache/apt/archives/
+sudo apt --fix-broken install
+sudo apt install zst
+sudo apt install zstd
+sudo su
+sudo cp -R /var/cache/apt/archives/gdal-data_3.4.3+dfsg-1~jammy0_all.deb ~/
+ls
+ls -la
+sudo ar -x gdal-data_3.4.3+dfsg-1~jammy0_all.deb 
+ls
+sudo zstd -d control.tar.zst
+sudo apt install zstd
+sudo ar -rc gdal-data_3.4.3+dfsg-1~jammy0_all.deb debian-binary control.tar.zst 
+ls -la
+sudo dpkg -i gdal-data_3.4.3+dfsg-1~jammy0_all.deb 
+sudo cp gdal-data_3.4.3+dfsg-1~jammy0_all.deb /var/cache/apt/archives/
+sudo apt update
+sudo apt install -f nginx uwsgi uwsgi-plugin-python3
+sudo apt --fix-broken install
+ls
+ls 
+ls
+sudo apt-get clean
+sudo apt-get update
+sudo apt install -f nginx uwsgi uwsgi-plugin-python3
+sudo apt install -f nginx
+clear
+sudo apt --fix-broken install
+sudo rm /var/cache/apt/archives/gdal-data_3.4.3+dfsg-1~jammy0_all.deb
+sudo apt --fix-broken install
+sudo rm -Rf /etc/apt/sources.list.d/ubuntugis-ubuntu-ppa-mantic.list
+sudo apt update
+sudo apt install -f nginx uwsgi uwsgi-plugin-python3
+sudo apt --fix-broken install
+sudo apt install -f nginx uwsgi uwsgi-plugin-python3
+ss -ltn
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+ls -la /home/dinosubat/.virtualenvs/
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+clear
+sudo ln -s /etc/uwsgi/apps-available/geonode.ini /etc/uwsgi/apps-enabled/geonode.ini
+sudo pkill -9 -f uwsgi
+sudo vim /usr/bin/geonode-uwsgi-start.sh
+sudo chmod +x /usr/bin/geonode-uwsgi-start.sh
+sudo vim /etc/systemd/system/geonode-uwsgi.service
+sudo systemctl daemon-reload
+sudo systemctl start geonode-uwsgi.service
+ss -ltn
+sudo systemctl start geonode-uwsgi.servicesudo systemctl status geonode-uwsgi.service
+sudo systemctl status geonode-uwsgi.service
+sudo systemctl enable geonode-uwsgi.service
+sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig
+sudo vim /etc/nginx/nginx.conf
+sudo rm /etc/nginx/sites-enabled/default
+sudo vim /etc/nginx/sites-available/geonode
+sudo mkdir -p /opt/geonode/geonode/uploaded
+sudo chown -Rf tomcat:www-data /opt/geonode/geonode/uploaded
+sudo chmod -Rf 777 /opt/geonode/geonode/uploaded/
+sudo touch /opt/geonode/geonode/.celery_results
+sudo chmod 777 /opt/geonode/geonode/.celery_results
+sudo ln -s /etc/nginx/sites-available/geonode /etc/nginx/sites-enabled/geonode
+sudo service tomcat9 restart
+sudo service nginx restart
+cd /opt/geonode
+chmod +x *.sh
+cat paver_local.sh 
+vim .env_local 
+clear
+./paver_local.sh reset
+./paver_local.sh setup
+./paver_local.sh sync
+sudo chmod -Rf 777 geonode/static_root/ geonode/uploaded/
+sudo su
+touch /opt/geonode/geonode/wsgi.py
+ss -ltn
+sudo systemctl restart geonode-uwsgi.service
+ss -ltn
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo su
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo tail -F /var/log/nginx/error.log 
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service
+sudo systemctl start geonode-uwsgi.service
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo tail -F /var/log/nginx/error.log 
+sudo vim /etc/nginx/sites-enabled/geonode
+sudo service nginx restart
+sudo vim /etc/uwsgi/apps-enabled/geonode.ini
+sudo service geonode-uwsgi restart
+sudo su
+vim $VIRTUAL_ENV/bin/postactivate
+cat .env
+vim $VIRTUAL_ENV/bin/postactivate
+deactivate
+workon geonode
+DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
+DJANGO_SETTINGS_MODULE=geonode.settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
+clear
+sudo apt update -y; sudo apt install python3-certbot-nginx -y
+sudo systemctl reload nginx
+sudo certbot --nginx -d geo2.hyphae.design
+sudo certbot renew --dry-run
+sudo systemctl restart geonode-uwsgi
+ss -ln
+ss -ltn
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo tail -F /var/log/nginx/error.log 
+sudo vim /etc/systemd/system/geonode-uwsgi.service ~
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo vim /etc/uwsgi/apps-enabled/geonode.ini
+sudo apt install curl -y
+apt update
+sudo apt update
+sudo apt install curl software-properties-common apt-transport-https lsb-release
+sudo mkdir /etc/supervisor/conf.d
+exit
+nproc
+cd /opt/geonode/
+ss -ltn
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo su
+sudo apt-get install curl gnupg apt-transport-https -y
+clear
+curl -1sLf "https://github.com/rabbitmq/signing-keys/releases/download/2.0/rabbitmq-release-signing-key.asc" | sudo gpg --dearmor | sudo tee /usr/share/keyrings/com.github.rabbitmq.signing.gpg > /dev/null
+sudo apt-get install apt-transport-https
+sudo vim /etc/apt/sources.list.d/erlang.list
+sudo apt update && sudo apt dist-upgrade 
+sudo vim /etc/apt/sources.list.d/erlang.list
+sudo apt update && sudo apt dist-upgrade 
+curl -1sLf "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xf77f1eda57ebb1cc" | sudo gpg --dearmor | sudo tee /usr/share/keyrings/net.launchpad.ppa.rabbitmq.erlang.gpg > /dev/null
+sudo apt update && sudo apt dist-upgrade 
+curl -1sLf "https://packagecloud.io/rabbitmq/rabbitmq-server/gpgkey" | sudo gpg --dearmor | sudo tee /usr/share/keyrings/io.packagecloud.rabbitmq.gpg > /dev/null
+sudo apt update && sudo apt dist-upgrade 
+curl -1sLf "https://keys.openpgp.org/vks/v1/by-fingerprint/0A9AF2115F4687BD29803A206B73A36E6026DFCA" | sudo gpg --dearmor | sudo tee /usr/share/keyrings/com.rabbitmq.team.gpg > /dev/null
+sudo apt update && sudo apt dist-upgrade 
+sudo rm /etc/apt/sources.list.d/erlang.list 
+sudo tee /etc/apt/sources.list.d/rabbitmq.list <<EOF
+deb [signed-by=/usr/share/keyrings/net.launchpad.ppa.rabbitmq.erlang.gpg] http://ppa.launchpad.net/rabbitmq/rabbitmq-erlang/debian buster main
+deb-src [signed-by=/usr/share/keyrings/net.launchpad.ppa.rabbitmq.erlang.gpg] http://ppa.launchpad.net/rabbitmq/rabbitmq-erlang/debian buster main
+
+EOF
+
+sudo apt update && sudo apt dist-upgrade 
+ls /etc/apt/sources.list.d/
+sudo rm /etc/apt/sources.list.d/rabbitmq.list 
+sudo add-apt-repository ppa:rabbitmq/rabbitmq-erlang
+sudo apt update
+sudo rm /etc/apt/sources.list.d/rabbitmq-ubuntu-rabbitmq-erlang-mantic.list 
+sudo add-apt-repository ppa:rabbitmq/rabbitmq-erlang
+sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/
+sudo apt update
+sudo vim /etc/apt/sources.list.d/rabbitmq-ubuntu-rabbitmq-erlang-mantic.list 
+sudo apt update
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F77F1EDA57EBB1CC
+sudo apt update
+clear
+sudo apt-get install curl gnupg apt-transport-https -y
+sudo apt-get update -y
+sudo apt-get install -y erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo apt-get install rabbitmq-server -y --fix-missing
+sudo vim /etc/apt/sources.list.d/rabbitmq-ubuntu-rabbitmq-erlang-mantic.list 
+sudo apt-get update -y
+sudo apt-get install -y erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo apt-get install rabbitmq-server -y --fix-missing
+sudo dpkg --configure -a
+sudo a-f inst
+sudo apt -f install
+sudo apt-get install rabbitmq-server -y --fix-missing
+sudo dpkg --configure rabbitmq-server
+sudo apt-get install -y erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo systemctl stop rabbitmq-server.service 
+sudo systemctl start rabbitmq-server.service 
+sudo apt purge -y erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo apt purge  rabbitmq-server
+sudo apt autoremove 
+sudo apt autoclean 
+sudo apt-get install -y erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo apt-get install rabbitmq-server -y --fix-missing
+sudo systemctl stop rabbitmq-server.service 
+sudo apt purge rab
+sudo apt install --reinstall rabbitmq-server -y --fix-missing
+sudo apt instll rabbitmq-server
+sudo apt install rabbitmq-server
+sudo rm /var/lib/dpkg/info/rabbitmq-server.
+sudo rm /var/lib/dpkg/info/rabbitmq-server.*
+sudo dpkg --configure rabbitmq-server
+sudo apt update
+sudo systemctl status rabbitmq-server.service 
+sudo systemctl start rabbitmq-server.service 
+sudo apt install rabbitmq-server 
+sudo systemctl daemon-reload 
+sudo systemctl restart rabbitmq-server.service 
+sudo systemctl status rabbitmq-server.service 
+sudo apt-get install -y erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo /etc/init.d/rabbitmq-server stop
+sudo /etc/init.d/rabbitmq-server start
+sudo -u rabbitmq rabbitmqctl stop
+sudo systemctl status rabbitmq-server
+sudo systemctl is-enabled rabbitmq-server.service
+sudo rabbitmq-plugins enable rabbitmq_management
+sudo ufw allow proto tcp from any to any port 5672,15672
+telnet
+sudo apt install telnet
+telnet
+telnet localhost 5672
+sudo lsof -n -i4TCP:5672 | grep LISTEN
+sudo apt install lsof
+sudo lsof -n -i4TCP:5672 | grep LISTEN
+sudo lsof -n -i6TCP:5672 | grep LISTEN
+sudo iptables -I INPUT 1 -p tcp --dport 4369 -j ACCEPT
+sudo iptables -I INPUT 1 -p tcp --dport 5672 -j ACCEPT
+sudo iptables -I INPUT 1 -p tcp --dport 15672 -j ACCEPT
+sudo lsof -n -i4TCP:5672 | grep LISTEN
+sudo /etc/init.d/rabbitmq-server start
+sudo rabbitmqctl delete_user guest
+sudo rabbitmqctl 
+sudo rabbitmqctl shutdown
+sudo rabbitmqctl start
+sudo systemctl start rabbitmq
+sudo systemctl start rabbitmq-server
+ss -ltn
+clear
+sudo apt purge sudo apt-get install -y erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo apt purge erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlan
+sudo apt purge rabbitmq-server
+sudo apt purge --autoremove rabbitmq-server
+clear
+sudo apt autoremove && sudo apt autoclean 
+sudo apt-get install -y erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo apt-get install rabbitmq-server -y --fix-missing
+sudo dpkg --configure -a
+hostname
+hostnamectl
+sudo hostnamectl set-hostname geo2.hyphae.design
+hostnamectl
+sudo service rabbitmq-server start
+iptables -L
+sudo iptables -L
+vim /etc/hosts
+sudo vim /etc/hosts
+hostnamectl
+sudo service rabbitmq-server restart
+sudo service rabbitmq-server force-reload 
+sudo service rabbitmq-server rotate-logs 
+sudo service rabbitmq-server stop
+sudo service rabbitmq-server start
+ss -antpl | grep 15672
+sudo rm /usr/share/keyrings/com.rabbitmq.team.gpg 
+sudo rm /usr/share/keyrings/net.launchpad.ppa.rabbitmq.erlang.gpg 
+sudo rm  /usr/share/keyrings/io.packagecloud.rabbitmq.gpg 
+sudo rm /etc/apt/sources.list.d/rabbitmq.lis
+sudo rm /etc/apt/sources.list.d/rabbitmq-ubuntu-rabbitmq-erlang-mantic.list 
+clear
+sudo apt purge erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo apt purge rabbitmq-server
+sudo apt autoremove 
+sudo apt autcl
+sudo apt autoclean 
+clear
+sudo apt install apt-get install software-properties-common curl gnupg2 apt-transport-https -y
+sudo apt-get install software-properties-common curl gnupg2 apt-transport-https -y-
+sudo apt-get install software-properties-common curl gnupg2 apt-transport-https -y
+wget https://packages.erlang-solutions.com/erlang/debian/pool/esl-erlang_23.1.5-1~debian~stretch_amd64.deb
+sudodpkg -i esl-erlang_23.1.5-1~debian~stretch_amd64.deb 
+sudo dpkg -i esl-erlang_23.1.5-1~debian~stretch_amd64.deb 
+sudo apt-get install -f
+sudo apt-get update -y
+sudo apt install apt-get install erlang erlang-nox
+sudo apt-get install erlang erlang-nox
+sudo apt-get install -y erlang-base                         erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets                         erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key                         erlang-runtime-tools erlang-snmp erlang-ssl                         erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo apt autoremove 
+erl -v
+clear
+sudo add-apt-repository 'deb http://www.rabbitmq.com/debian/ testing main'
+wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | apt-key add -
+sudo wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | apt-key add -
+sudo wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | apt-key add
+sudo wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | apt-key add -
+sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/
+sudo apt-get update -y
+sudo vim /etc/apt/sources.list
+sudo apt-get update -y
+sudo vim /etc/apt/sources.list
+sudo apt-get update -y
+sudo add-apt-repository 'deb http://www.rabbitmq.com/debian/ testing main'
+sudo wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | apt-key add -
+sudo wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | apt-key add
+sudo wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | apt-key addsudo apt install rabbitmq-server
+sudo apt install rabbitmq-server
+sudo systemctl start rabbitmq-server
+sudo systemctl statusrabbitmq-server
+sudo systemctl status rabbitmq-server
+sudo systemctl is-enabled rabbitmq-server.service
+sudo rabbitmq-plugins enable rabbitmq_management
+sudo rabbitmqctl delete_user guest
+sudo rabbitmqctl add_user admin admin
+sudo rabbitmqctl set_user_tags admin administrator
+sudo rabbitmqctl add_vhost /localhost
+sudo rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
+sudo rabbitmqctl set_permissions -p /localhost admin ".*" ".*" ".*"
+sudo apt install supervisor
+sudo rm -Rf /etc/supervisor/
+sudo su
+sudo vim /etc/supervisor/supervisord.conf
+sudo vim /etc/supervisor/conf.d/geonode-celery.conf
+sudo supervisorctl reload
+sudo systemctl restart supervisor
+sudo pkill -f celery
+sudo systemctl status superviso
+sudo systemctl status supervisor
+sudo apt install memcached
+sudo systemctl start memcached
+sudo systemctl enable memcached
+workon geonode
+cd /opt/geonode/
+sudo apt install libmemcached-dev zlib1g-dev
+pip install pylibmc==1.6.1
+pip install pylibmc==1.6.3
+pip install sherlock==0.3.2
+pip install sherlock==0.4.1
+sudo systemctl restart supervisor.service
+sudo systemctl status supervisor.service
+sudo pkill -9 -f uwsgi
+sudo syatemct restart geonode-uwsgi
+sudo systemct restart geonode-uwsgi
+sudo systemctl restart geonode-uwsgi
+ss -ltn
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo systemctl start uwsgi
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+ls /run/uwsgi/app/geonode/
+rm  /run/uwsgi/app/geonode/
+sudo rm  /run/uwsgi/app/geonode/pid 
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+ls /run/uwsgi/app/geonode/
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo systemctl restart geonode-uwsgi.service 
+sudo systemctl stop geonode-uwsgi.service 
+sudo systemctl status geonode-uwsgi.service 
+sudo bas /usr/bin/geonode
+sudo bas /usr/bin/geonode-uwsgi-start.sh 
+sudo bash /usr/bin/geonode-uwsgi-start.sh 
+sudo su
+sudo systemctl restart geonode-uwsgi.service 
+ss -ltn
+sudo systemctl start geonode-uwsgi.service 
+ss -ltn
+sudo systemct stop uwsgi.ini 
+sudo systemctl stop uwsgi
+sudo systemctl start geonode-uwsgi.service 
+sudo systemctl restart geonode-uwsgi.service 
+ss -ltn
+sudo systemctl restart nginx.service 
+sudo bash /usr/bin/geonode-uwsgi-start.sh 
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo systemctl restart nginx.service 
+sudo systemctl start geonode-uwsgi.service 
+ls /home/dinosubat/.virtualenvs/geonode/
+exit
+cat /opt/geonode/.env
+exit
+clear
+cd /opt/hyphae/
+vim .env_local 
+exit
+sudo lsb_release -a
+history
+ls
+rm -Rf control.tar.zst data-2.23.0.zip debian-binary gdal-data_3.4.3+dfsg-1~jammy0_all.deb 
+ls
+echo history > bash_history.txt
+cat bash_history.txt 
+rm history
+ls
+truncate bash_history.txt 
+ls
+rm bash_history.txt 
+rm data.tar.zst 
+ls
+clear
+ss -ltn
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+echo echo $VIRTUAL_ENV
+echo $VIRTUAL_ENV
+workon geonode
+echo $VIRTUAL_ENV
+sudo journalctl --rotate
+sudo journalctl --vacuum-time=1s
+sudo systemctl restart systemd-journald
+sudo su
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo uwsgi -c /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo vim /etc/systemd/system/geonode-uwsgi.service
+clear
+sudo pkill -9 -f uwsgi
+sudo systemctl start uwsgi
+sudo uwsgi -c /etc/uwsgi/apps-available/geonode.ini 
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+sudo uwsgi -c /etc/uwsgi/apps-enabled/geonode.ini
+sudo systemctl start geonode-uwsgi
+sudo systemctl status geonode-uwsgi
+sudo service uwsgi restart
+sudo vim /etc/systemd/system/geonode-uwsgi.service
+sudo service uwsgi restart
+sudo systemctl restart geonode-uwsgi
+sudo systemctl daemon-reload
+sudo systemctl restart geonode-uwsgi
+ss -ltn
+sudo vim /etc/systemd/system/geonode-uwsgi.service
+sudo rm sudo rm /tmp/geonode.pid
+sudo rm -rf /run/uwsgi/app/geonode/
+sudo killall /usr/bin/uwsgi  # just to be sure
+sudo killall5 /usr/bin/uwsgi
+sudo pkill -9 -f uwsgi
+sudo service uwsgi restart
+ss -ltn
+sudo supervisorctl start geonode_uwsgi
+sudo vim /etc/systemd/system/geonode-uwsgi.service
+sudo vim /etc/uwsgi/apps-available/geonode.ini 
+ls /run/uwsgi/
+ls /run/uwsgi/app/geonode/
+sudo su
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+sudo vim /etc/uwsgi/apps-available/geonode.ini 
+sudo uwsgi -c /etc/uwsgi/apps-enabled/geonode.ini
+ss -ltn
+clear
+sudo apt install -y nginx uwsgi uwsgi-plugin-python3
+sudo apt install --reinstall -y nginx uwsgi uwsgi-plugin-python3
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+sudo rm /etc/uwsgi/apps-enabled/geonode.ini
+sudo ln -s /etc/uwsgi/apps-available/geonode.ini /etc/uwsgi/apps-enabled/geonode.ini
+sudo pkill -9 -f uwsgi
+sudo vim /usr/bin/geonode-uwsgi-start.sh
+sudo rm /usr/bin/geonode-uwsgi-start.sh
+sudo vim /usr/bin/geonode-uwsgi-start.sh
+sudo chmod +x /usr/bin/geonode-uwsgi-start.sh
+sudo vim /etc/systemd/system/geonode-uwsgi.service
+sudo systemctl daemon-reload
+sudo systemctl start geonode-uwsgi.service
+clear
+sudo systemctl status geonode-uwsgi.service
+sudo systemctl enable geonode-uwsgi.service
+sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig
+sudo vim /etc/nginx/nginx.conf
+sudo rm /etc/nginx/sites-enabled/default
+sudo vim /etc/nginx/sites-available/geonode
+sudo rm /etc/nginx/sites-available/geonode
+sudo vim /etc/nginx/sites-available/geonode
+sudo mkdir -p /opt/geonode/geonode/uploaded
+sudo chown -Rf tomcat:www-data /opt/geonode/geonode/uploaded
+sudo chmod -Rf 777 /opt/geonode/geonode/uploaded/
+sudo touch /opt/geonode/geonode/.celery_results
+sudo chmod 777 /opt/geonode/geonode/.celery_results
+sudo ln -s /etc/nginx/sites-available/geonode /etc/nginx/sites-enabled/geonode
+sudo rm /etc/nginx/sites-enabled/geonode
+sudo ln -s /etc/nginx/sites-available/geonode /etc/nginx/sites-enabled/geonode
+sudo service tomcat9 restart
+sudo service nginx restart
+ss -ltn
+sudo pkill -9 -f uwsgi
+touch /opt/geonode/geonode/wsgi.py
+sudo systemctl restart geonode-uwsgi.service 
+touch /opt/geonode/geonode/wsgi.py
+ss -ltn
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo systemctl restart nginx.service 
+sudo systemctl status nginx.service 
+sudo tail -F /var/log/nginx/error.log 
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+ss -ltn
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+ss -ltn
+sudo systemctl restart  nginx.service 
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+sudo systemctl restart  nginx.service 
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+sudo systemctl start uws
+sudo systemctl start uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo systemctl restart tomcat9.service 
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+cd /opt/geonode/
+pip install -r requirements.txt --upgrade
+pip install -e . --upgrade
+pip install pygdal=="`gdal-config --version`.*"
+sudo pkill -9 -f uwsgi
+sudo killall5 uwsgi
+./paver_local.sh reset
+./paver_local.sh setup
+./paver_local.sh sync
+./manage_local.sh collectstatic --noinput
+sudo chmod -Rf 777 geonode/static_root/ geonode/uploaded/
+sudo su
+sudo rm /var/log/uwsgi/app/geonode.log
+sudo systemctl restart geonode-uwsgi.service 
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo systemctl restart uwsgi.service 
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+touch /opt/geonode/geonode/wsgi.py
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+python manage.py shell
+deactivate 
+source /home/dinosubat/.virtualenvs/geonode/bin/activate
+python
+cat setup.cfg 
+pip install Django==3.2.18
+pip install django-filter==23.1
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+clear
+python -V
+pip -V
+whereis python3
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+python
+sudo setenforce Permissive
+sudo vim /etc/uwsgi/apps-available/geonode.ini 
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo pkill -9 -f uwsgi
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo systemctl start uwsgi
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo vim /etc/uwsgi/apps-available/geonode.ini 
+sudo pkill -9 -f uwsgi
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo systemctl restart uwsgi
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo vim /etc/uwsgi/apps-available/geonode.ini 
+python --version
+python3 --version
+vim ~/.bashrc 
+echo echo $VIRTUAL_ENV
+vim ~/.bashrc 
+/usr/bin/python3.10
+deactivate 
+source ~/.bashrc 
+vim ~/.bashrc 
+source ~/.bashrc 
+workon geonode
+echo $VIRTUALENVWRAPPER_PYTHON
+deactivate 
+clear
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+ss -ltn
+sudo systemctl restart uwsgi.service 
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo su
+sudo update-alternatives --list python
+sudo update-alternatives --list python3
+sudo pkill -9 -f uwsgi
+sudo systemctl restart uwsgi.service 
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo systemctl restart geonode-uwsgi.service 
+ss -ltn
+sudo pkill -9 -f uwsgi
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo update-alternatives --config python
+sudo update-alternatives --config python3
+which uwsgi
+apt-ache show uwsgi-plugin-python3
+apt-cacheshow uwsgi-plugin-python3
+apt-cache show uwsgi-plugin-python3
+sudo apt install --reinstall uwsgi-plugin-python3 
+python3.10 -V
+clear
+sudo apt install python3.10-dev
+sudo apt install python3.10-minimal 
+sudo apt install python3.10-venv
+sudo apt install python3-all-dev python3.10-dev python3.10-venv
+rmvirtualenv geonode
+cd /opt/geonode/
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+workon geonode
+ls /usr/bin/python3*
+mkvirtualenv --python=/usr/bin/python3.10 geonode
+pip install -r requirements.txt --upgrade
+pip install -e . --upgrade
+pip install pygdal=="`gdal-config --version`.*"
+pip install -r requirements.txt --upgrade
+pip uninstall  boto3==1.26.95  coverage==7.2.5 dj-database-url==2.0.0 django-filter==23.2 invoke==2.1.1 ipython==8.13.1 pymupdf==1.22.2 requests==2.29.0 sqlalchemy==2.0.12
+pip install boto3==1.26.118 coverage==7.2.3 dj-database-url==1.3.0 django-filter==23.1 invoke==2.0.0 ipython==8.12.0 pip==23.1.1 PyMuPDF==1.22.1 requests==2.28.2 SQLAlchemy==2.0.10
+pip show uwsgi
+cat setup.cfg 
+vim setup.c
+vim setup.cfg 
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+ss -ltn
+sudo systemctl force-reload geonode-uwsgi
+sudo systemctl restart uwsgi.service 
+sudo service uwsgi restart
+cd ~/
+deactivate 
+sudo systemctl stop nginx.service && sudo systemctl stop tomcat9.service & sudo pkill -9 -f uwsgi
+ls
+clear
+pip list
+sudo apt purge uwsgi uwsgi-plugin-python3
+cat /opt/geonode/requirements.txt 
+wget http://modwsgi.googlecode.com/files/mod_wsgi-2.0.tar.gz
+wget https://codeload.github.com/GrahamDumpleton/mod_wsgi/tar.gz/4.9.4
+ls
+tar -rm 4.9.4 
+rm 4.9.4 
+wget https://codeload.github.com/GrahamDumpleton/mod_wsgi/tar.gz/4.9.4
+ls
+mv 4.9.4 4.9.4.tar.gz
+ls
+tar -xf 4.9.4.tar.gz 
+ls
+cd mod_wsgi-4.9.4/
+./configure 
+./configure --with-python=/usr/bin/python3
+./configure --with-python=/usr/bin/python3.10
+./configure --with-apxs=/usr/local/apache/bin/apxs \--with-python=/usr/bin/python3.10
+./configure --with-apxs=/usr/local/apache/bin/apxs\--with-python=/usr/bin/python3.10
+./configure --with-apxs=/usr/local/apache/bin/apxs
+cd ..
+em 4.9.4.tar.gz mod_wsgi-4.9.4/
+rm -Rf 4.9.4.tar.gz mod_wsgi-4.9.4/
+ls
+clear
+gdal-config --version
+sudo apt install uwsgi uwsgi-plugin-python3
+sudo apt install python3-wsgi
+sudo apt install --reinstall python3.10-dev
+sudo apt install --reinstall python3.10-full 
+sudo apt purge python3.9-venv
+clear
+sudo systemctl start uwsgi
+sudo systemctl status uws
+sudo systemctl start tom
+sudo systemctl start tomcat9
+sudo systemctl start nginx.service 
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo systemctl start geonode-uwsgi
+sudo systemctl status geonode-uwsgi
+ss -ltn
+sudo systemctl restart geonode-uwsgi
+sudo systemctl status geonode-uwsgi
+ss -ltn
+sudo systemctl daemon-reload
+sudo systemctl start geonode-uwsgi.service
+sudo systemctl enable geonode-uwsgi.service
+sudo service tomcat9 restart
+sudo service nginx restart
+sudo vim /etc/nginx/sites-enabled/geonode
+sudo service nginx restart
+sudo vim /etc/uwsgi/apps-enabled/geonode.ini
+sudo service geonode-uwsgi restart
+workon geonode
+sudo su
+cd /opt/geonode/
+DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design/
+DJANGO_SETTINGS_MODULE=geonode.settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design/
+sudo certbot renew --dry-run
+sudo apt update -y; sudo apt install python3-certbot-nginx -y
+sudo certbot renew --dry-run
+sudo apt update -y; sudo apt install --reinstall python3-certbot-nginx -y
+sudo certbot renew --dry-run
+sudo systemctl reload nginx
+sudo certbot --nginx -d geo2.hyphae.design
+deactivate 
+python3 -m pip install cffi
+sudo certbot renew --dry-run
+pip install -U cffi
+sudo certbot renew --dry-run
+sudo update-alternatives --config python3
+udo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
+sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
+pip3 install -U cffi
+pip3 uninstall -U cffi
+pip3 uninstall cffi
+pip3 install -U cffi
+sudo certbot renew --dry-run
+source ~/.bashrc 
+source ~/.profile 
+sudo certbot renew --dry-run
+pip3 install -U openssl
+pip3 install -U pyopenssl
+sudo certbot renew --dry-run
+sudo apt update -y; sudo apt install python3-certbot-nginx -y
+ls /etc/apt/sources.list.d/
+apt-cache show python3.10
+apt-cache show python3
+apt-cache show gdal-bin
+gdal-confi --version
+gdal-config --version
+clear
+cd ~/
+ls
+sudo rm -Rf gdal-3.4.3/
+clear
+sudo systemctl stop nginx.service && sudo systemctl stop geonode-uwsgi.service && sudo systemctl stop tomcat9.service && sudo systemctl stop uwsgi.service && sudo systemctl stop postgresql && sudo systemctl stop rabbitmq-server.service && sudo systemctl stop supervisor.service && sudo systemctl stop supervisor.service && sudo pkill -9 -f uwsgi
+sudo apt purge --autoremove build-essential python3-gdal=3.4.1+dfsg-1build4 gdal-bin=3.4.1+dfsg-1build4 libgdal-dev=3.4.1+dfsg-1build4 python3-all-dev python3.10-dev python3.10-venv virtualenvwrapper libxml2 libxml2-dev gettext libmemcached-dev zlib1g-dev libxslt1-dev libjpeg-dev libpng-dev libpq-dev git unzip gcc zlib1g-dev libgeos-dev libproj-dev sqlite3 spatialite-bin libsqlite3-mod-spatialite libsqlite3-dev openjdk-11-jdk-headless default-jdk-headless postgresql-13 postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13 postgresql-client-13 nginx uwsgi uwsgi-plugin-python3 erlang rabbitmq-server supervisor python3-certbot-nginx nginx-common
+sudo apt purge --autoremove build-essential python3-gdal gdal-bin= libgdal-dev python3-all-dev python3.10-dev python3.10-venv virtualenvwrapper libxml2 libxml2-dev gettext libmemcached-dev zlib1g-dev libxslt1-dev libjpeg-dev libpng-dev libpq-dev git unzip gcc zlib1g-dev libgeos-dev libproj-dev sqlite3 spatialite-bin libsqlite3-mod-spatialite libsqlite3-dev openjdk-11-jdk-headless default-jdk-headless postgresql-13 postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13 postgresql-client-13 nginx uwsgi uwsgi-plugin-python3 erlang rabbitmq-server supervisor python3-certbot-nginx nginx-common
+sudo apt purge --autoremove build-essential python3-gdal gdal-bin libgdal-dev python3-all-dev python3.10-dev python3.10-venv virtualenvwrapper libxml2 libxml2-dev gettext libmemcached-dev zlib1g-dev libxslt1-dev libjpeg-dev libpng-dev libpq-dev git unzip gcc zlib1g-dev libgeos-dev libproj-dev sqlite3 spatialite-bin libsqlite3-mod-spatialite libsqlite3-dev openjdk-11-jdk-headless default-jdk-headless postgresql-13 postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13 postgresql-client-13 nginx uwsgi uwsgi-plugin-python3 erlang rabbitmq-server supervisor python3-certbot-nginx nginx-common
+sudo rm -Rf ~/.virtualenvs /opt/geonode /opt/tomcat /usr/lib/jvm/jre /etc/systemd/system/tomcat9.service /usr/lib/systemd/system/tomcat9.service /opt/data /etc/uwsgi /usr/bin/geonode-uwsgi-start.sh /etc/systemd/system/geonode-uwsgi.service /etc/nginx /var/log/uwsgi /var/log/postgresql /etc/supervisor /var/logs/geonode-celery.log /etc/postgresql /var/www/html /etc/apt/sources.list.d/pgdg.list /etc/apt/sources.list.d/ubuntugis-ubuntu-ubuntugis-unstable-jammy.list /etc/systemd/system/geonode-uwsgi.service /var/lib/postgresql /etc/uwsgi /var/log/postgresql /etc/postgresql /etc/apt/sources.list.d/rabbitmq_rabbitmq-server.list /etc/apt/sources.list.d/ubuntugis-ubuntu-ppa-jammy.list /etc/init.d/nginx /var/log/nginx /usr/bin/geonode /usr/geonode_updateip /etc/apt/sources.list.d/rabbitmq.list /etc/apt/trusted.gpg.d/ubuntugis-ubuntu-ppa.gpg /usr/share/keyrings/net.launchpad.ppa.rabbitmq.erlang.gpg /usr/share/keyrings/com.rabbitmq.team.gpg /var/log/letsencrypt /var/log/rabbitmq /var/log/supervisor 
+sudo apt autoremove && sudo apt autoclean
+sudo journalctl --rotate && sudo journalctl --vacuum-time=1s
+clear
+sudo rm /usr/bin/geonode_updateip 
+clear
+ls -l
+clear
+pwd
+sudo apt update && sudo apt dist-upgrade 
+sudo rm /etc/apt/sources.list.d/pgdg.list.save 
+sudo rm /etc/apt/sources.list.d/ubuntugis-ubuntu-ppa-mantic.list.save 
+clear
+sudo apt install vim
+sudo apt install --allow-downgrades build-essential 
+clear
+gdal-config --version
+whereis gdal
+gdal
+sudo rm -Rf /usr/local/bin/gdal*
+gdal-config --version
+clear
+apt-cache show gdal
+sudo apt install software-properties-common 
+wget https://github.com/OSGeo/gdal/releases/download/v3.2.2/gdal-3.2.2.tar.gz
+tar -xf gdal-3.2.2.tar.gz 
+cd gdal-3.2.2/
+./configure --with-python=/usr/bin/python3.10
+sudo apt install libproj-dev
+./configure --with-python=/usr/bin/python3.10
+./make -j4
+make -j4
+sudo apt install python3.10-de
+sudo apt install python3.10-dev
+sudo apt install python3.10-distutils 
+sudo apt install python3.10-venv 
+make -j4
+sudo make install
+gdal-config --version
+sudo ldconfig 
+sudo apt install virtualenvwrapper
+sudo apt install libxml2 libxml2-dev gettext libmemcached-dev zlib1g-dev 
+sudo apt install libxslt1-dev libjpeg-dev libpng-dev libpq-dev
+sudo apt install git unzip gcc zlib1g-dev libgeos-dev libproj-dev
+sudo apt install sqlite3 spatialite-bin libsqlite3-mod-spatialite libsqlite3-dev
+sudo apt install openjdk-11-jdk-headless default-jdk-headless -y
+apt-cache python3-gdal
+apt-cache show python3-gdal
+sudo apt install python3-gdal=3.2.2+dfsg-2+deb11u2 gdal-bin=3.2.2+dfsg-2+deb11u2 libgdal-dev=3.2.2+dfsg-2+deb11u2
+sudo apt install openjdk-11-jdk-headless default-jdk-headless -y
+gdalinfo --version
+python3.10 --version
+which python3.10
+java -version
+cd ../
+ls
+rm -Rf gdal-3.2.2.tar.gz 
+sudo apt install -y vim
+'sudo apt update -y; sudo apt autoremove --purge
+
+sudo apt update -y; sudo apt autoremove --purge
+sudo vim /etc/apt/sources.list
+sudo apt update -y; sudo apt autoremove --purge
+export WORKON_HOME=~/.virtualenvs
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+mkvirtualenv --python=/usr/bin/python3.10 geonode  # Use the python path from above
+vim .bashrc 
+sudo mkdir -p /opt/hyphae; sudo usermod -a -G www-data $USER; sudo chown -Rf $USER:www-data /opt/hypae/; sudo chmod -Rf 775 /opt/hypae/
+cd /opt/
+clear
+git clone https://github.com/GeoNode/geonode.git -b 4.1.x hyphae/
+git clone https://github.com/GeoNode/geonode.git -b 4.1.x hyphae
+sudo usermod -a -G www-data $USER
+sudo chown -Rf $USER:www-data /opt/hyphae/
+sudo chmod -Rf 775 /opt/hyphae/
+git clone https://github.com/GeoNode/geonode.git -b 4.1.x hyphae
+cd hyphae/
+clear
+vim .env
+clear
+cat .env
+vim .env
+vim .envclear
+clear
+pwd
+pip install -r requirements.txt --upgrade
+pip install -e . --upgrade
+pip show importlib-metadata
+pip show attrs
+pip show backports.functools-lru-cache
+pip install pygdal=="`gdal-config --version`.*"
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/
+sudo apt-get update
+sudo apt update -y; sudo apt install -y postgresql-13 postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13 postgresql-client-13
+sudo service postgresql start
+sudo -u postgres createuser -P geonode
+sudo -u postgres createdb -O geonode geonode
+sudo -u postgres createdb -O geonode geonode_data
+sudo -u postgres psql -d geonode -c 'CREATE EXTENSION postgis;'
+sudo -u postgres psql -d geonode -c 'GRANT ALL ON geometry_columns TO PUBLIC;'
+sudo -u postgres psql -d geonode -c 'GRANT ALL ON spatial_ref_sys TO PUBLIC;'
+sudo -u postgres psql -d geonode -c 'GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO geonode;'
+sudo -u postgres psql -d geonode -c 'GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO geonode;'
+sudo -u postgres psql -d geonode_data -c 'CREATE EXTENSION postgis;'
+sudo -u postgres psql -d geonode_data -c 'GRANT ALL ON geometry_columns TO PUBLIC;'
+sudo -u postgres psql -d geonode_data -c 'GRANT ALL ON spatial_ref_sys TO PUBLIC;'
+sudo -u postgres psql -d geonode_data -c 'GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO geonode;'
+sudo -u postgres psql -d geonode_data -c 'GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO geonode;'
+sudo vim /etc/postgresql/13/main/pg_hba.conf
+sudo service postgresql restart
+psql -U postgres geonode
+psql -U geonode geonode
+psql -U postgres geonode_data
+psql -U geonode geonode_data
+sudo useradd -m -U -d /opt/tomcat -s /bin/bash tomcat
+sudo usermod -a -G www-data tomcat
+cd ~/
+ls
+VERSION=9.0.74^Cwget https://www-eu.apache.org/dist/tomcat/tomcat-9/v${VERSION}/bin/apache-tomcat-${VERSION}.tar.gz
+ls
+VERSION=9.0.74;wget https://www-eu.apache.org/dist/tomcat/tomcat-9/v${VERSION}/bin/apache-tomcat-${VERSION}.tar.gz
+sudo mkdir /opt/tomcat
+sudo tar -xf apache-tomcat-${VERSION}.tar.gz -C /opt/tomcat/; rm apache-tomcat-${VERSION}.tar.gz
+sudo ln -s /opt/tomcat/apache-tomcat-${VERSION} /opt/tomcat/latest
+sudo chown -R tomcat:www-data /opt/tomcat/
+sudo sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'
+JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+echo $JAVA_HOME
+sudo ln -s /usr/lib/jvm/java-11-openjdk-amd64/  /usr/lib/jvm/jre
+sudo vim /etc/systemd/system/tomcat9.service
+sudo systemctl daemon-reload
+sudo systemctl start tomcat9.service
+sudo systemctl status tomcat9.service
+sudo systemctl enable tomcat9.service
+ss -ltn
+sudo mkdir -p /opt/data
+sudo chown -Rf $USER:www-data /opt/data
+sudo chmod -Rf 775 /opt/data
+sudo mkdir -p /opt/data/logs
+sudo chown -Rf $USER:www-data /opt/data/logs
+sudo chmod -Rf 775 /opt/data/logs
+GS_VERSION=2.23.0
+sudo wget --no-check-certificate "https://artifacts.geonode.org/geoserver/$GS_VERSION/geonode-geoserver-ext-web-app-data.zip" -O data-$GS_VERSION.zip
+sudo unzip data-$GS_VERSION.zip -d /opt/data/
+sudo mv /opt/data/data/ /opt/data/geoserver_data
+sudo chown -Rf tomcat:www-data /opt/data/geoserver_data
+sudo chmod -Rf 775 /opt/data/geoserver_data
+sudo mkdir -p /opt/data/geoserver_logs
+sudo chown -Rf tomcat:www-data /opt/data/geoserver_logs
+sudo chmod -Rf 775 /opt/data/geoserver_logs
+sudo mkdir -p /opt/data/gwc_cache_dir
+sudo chown -Rf tomcat:www-data /opt/data/gwc_cache_dir
+sudo chmod -Rf 775 /opt/data/gwc_cache_dir
+sudo wget --no-check-certificate "https://artifacts.geonode.org/geoserver/$GS_VERSION/geoserver.war" -O geoserver-$GS_VERSION.war
+sudo mv geoserver-$GS_VERSION.war /opt/tomcat/latest/webapps/geoserver.war
+sudo sed -i -e 's/xom-\*\.jar/xom-\*\.jar,bcprov\*\.jar/g' /opt/tomcat/latest/conf/catalina.properties
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+echo 'JAVA_HOME='$JAVA_HOME | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+sudo sed -i -e "s/JAVA_OPTS=/#JAVA_OPTS=/g" /opt/tomcat/latest/bin/setenv.sh
+echo 'GEOSERVER_DATA_DIR="/opt/data/geoserver_data"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+echo 'GEOSERVER_LOG_LOCATION="/opt/data/geoserver_logs/geoserver.log"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+echo 'GEOWEBCACHE_CACHE_DIR="/opt/data/gwc_cache_dir"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+echo 'GEOFENCE_DIR="$GEOSERVER_DATA_DIR/geofence"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+echo 'TIMEZONE="UTC"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+echo 'JAVA_OPTS="-server -Djava.awt.headless=true -Dorg.geotools.shapefile.datetime=false -DGS-SHAPEFILE-CHARSET=UTF-8 -XX:+UseParallelGC -XX:ParallelGCThreads=4 -Dfile.encoding=UTF8 -Duser.timezone=$TIMEZONE -Xms4096m -Xmx4096m -Djavax.servlet.request.encoding=UTF-8 -Djavax.servlet.response.encoding=UTF-8 -DGEOSERVER_CSRF_DISABLED=true -DPRINT_BASE_URL=http://localhost:8080/geoserver/pdf -DGEOSERVER_DATA_DIR=$GEOSERVER_DATA_DIR -Dgeofence.dir=$GEOFENCE_DIR -DGEOSERVER_LOG_LOCATION=$GEOSERVER_LOG_LOCATION -DGEOWEBCACHE_CACHE_DIR=$GEOWEBCACHE_CACHE_DIR -Dgwc.context.suffix=gwc"' | sudo tee --append /opt/tomcat/latest/bin/setenv.sh
+clear
+sudo systemctl restart tomcat9.service 
+sudo tail -F -n 300 /opt/data/geoserver_logs/geoserver.log
+sudo less /opt/tomcat/latest/logs/catalina.out
+clear
+sudo apt install -y nginx uwsgi uwsgi-plugin-python3
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+vim /opt/hyphae/.env
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+clear
+sudo ln -s /etc/uwsgi/apps-available/geonode.ini /etc/uwsgi/apps-enabled/geonode.ini
+sudo pkill -9 -f uwsgi
+sudo vim /usr/bin/geonode-uwsgi-start.sh
+sudo chmod +x /usr/bin/geonode-uwsgi-start.sh
+clear
+sudo vim /etc/systemd/system/geonode-uwsgi.service
+sudo systemctl daemon-reload
+sudo systemctl start geonode-uwsgi.service
+ss -ltn
+sudo systemctl status geonode-uwsgi.service
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig
+sudo vim /etc/nginx/nginx.conf
+sudo rm /etc/nginx/sites-enabled/default
+clear
+sudo vim /etc/nginx/sites-available/geonode
+sudo mkdir -p /opt/geonode/geonode/uploaded
+sudo chown -Rf tomcat:www-data /opt/geonode/geonode/uploaded
+sudo chmod -Rf 777 /opt/geonode/geonode/uploaded/
+sudo touch /opt/geonode/geonode/.celery_results
+sudo chmod 777 /opt/geonode/geonode/.celery_results
+sudo ln -s /etc/nginx/sites-available/geonode /etc/nginx/sites-enabled/geonode
+sudo service tomcat9 restart
+sudo service nginx restart
+cd /opt/hyphae/
+chmod +x *.sh
+./paver_local.sh reset
+./paver_local.sh setup
+./paver_local.sh sync
+./manage_local.sh collectstatic --noinput
+sudo chmod -Rf 777 geonode/static_root/ geonode/uploaded/
+sudo su
+sudo systemctl start uwsg
+sudo systemctl start uwsgi
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+touch /opt/geonode/geonode/wsgi.py
+touch /opt/hyphae/geonode/wsgi.py
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+sudo vim /etc/nginx/sites-available/geonode
+ls /opt/
+surdo rm -Rf /opt/geonode/
+sudo rm -Rf /opt/geonode/
+clear
+sudo mkdir -p /opt/hyphae/geonode/uploaded
+sudo chown -Rf tomcat:www-data /opt/hyphae/geonode/uploaded/
+sudo chmod -Rf 777 /opt/hyphae/geonode/uploaded/
+sudo touch /opt/hyphae/geonode/.celery_results
+sudo su
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo systemctl restart uwsgi.service 
+sudo pkill -9 -f uwsgi
+sudo systemctl restart uwsgi.service 
+sudo systemctl restart geonode-uwsgi.service 
+sudo vim /etc/nginx/sites-enabled/geonode
+sudo service nginx restart
+sudo vim /etc/uwsgi/apps-enabled/geonode.ini
+sudo service geonode-uwsgi restart
+workon geonode
+sudo su
+vim $VIRTUAL_ENV/bin/postactivate
+deactivate
+workon geonode
+DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design/
+DJANGO_SETTINGS_MODULE=hypae.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design/
+python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design/
+python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
+DJANGO_SETTINGS_MODULE=geonode.settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
+source .env_local 
+DJANGO_SETTINGS_MODULE=hypae.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
+DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
+ls geonode/
+clear
+sudo apt update -y; sudo apt install python3-certbot-nginx -y
+sudo systemctl reload nginx
+sudo ufw allow 'Nginx Full'
+sudo certbot --nginx -d geo2.hyphae.design
+clear
+deactivate 
+sudo reboot now
+ss -ltn
+sudo vim /etc/uwsgi/apps-enabled/geonode.ini
+sudo service geonode-uwsgi restart
+ss -ltn
+sudo systemctl restart uwsgi.service 
+sudo systemctl start uwsgi.service 
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+sudo vim /usr/bin/geonode-uwsgi-start.sh 
+sudo vim /etc/systemd/system/geonode-uwsgi.service 
+sudo systemctl restart uwsgi.service 
+sudo systemctl restart geonode-uwsgi.service 
+sudo systemctl status geonode-uwsgi.service 
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+ss -ltn
+sudo systemctl restart uwsgi.service 
+sudo systemctl start uwsgi.service 
+sudo systemctl status uwsgi.service 
+sudo pkill -9 -f uwsgi
+sudo systemctl start uwsgi.service 
+clear
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+ls -la /opt/
+sudo vim /etc/uwsgi/apps-available/geonode.ini
+sudo vim /etc/nginx/nginx.conf
+sudo vim /etc/nginx/sites-available/geonode
+ls /opt/hyphae/geonode/
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo systemctl restart uwsgi.service 
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo systemctl restart geonode-uwsgi.service 
+ss -ltn
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+python --version
+python3 --version
+sudo systemctl stop nginx.service && sudo systemctl stop tomcat9.service && sudo systemctl stop uwsgi.service && sudo systemctl stom geonode-uwsgi
+sudo systemctl stop nginx.service && sudo systemctl stop tomcat9.service && sudo systemctl stop uwsgi.service && sudo systemctl stop geonode-uwsgi
+sudo pkill -9 -f uwsgi
+clear
+rmvirtualenv geonode
+mkvirtualenv --python=/usr/bin/python3.9 geonode
+python -V
+cd /opt/hyphae/
+pip install -r requirements.txt --upgrade
+pip install -e . --upgrade
+pip install pygdal=="`gdal-config --version`.*"pip install pygdal=="`gdal-config --version`.*"
+pip install pygdal=="`gdal-config --version`.*"
+pip list
+sudo systemctl start nginx.service && sudo systemctl start tomcat9
+ss -ltn
+sudo systemctl start uwsgi.service 
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+pip installdj_database_url
+pip install dj_database_url
+sudo systemctl restart uwsgi.service 
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo pkill -9 -f uwsgi
+sudo systemctl restart uwsgi.service 
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+pip install psycopg2
+pip install psycopg2-binary
+sudo pkill -9 -f uwsgi
+sudo tail -F -n 300 /var/log/uwsgi/app/geonode.log
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+pip install -r requirements.txt --upgrade --no-cache
+sudo apt install libpq-dev 
+pip install -r requirements.txt --upgrade --no-cache
+deactivate 
+rmvirtualenv geonode
+mkvirtualenv --python=/usr/bin/python3.10 geonode  # Use the python path from above
+pip install -r requirements.txt --upgrade --nocache
+pip install -r requirements.txt --upgrade --no-cache
+sudo apt install gcc
+sudo apt install libc
+pip install -r requirements.txt --upgrade
+clear
+deactivate 
+history
+workon geonode
+cd /opt/hyphae/
+pip install -r requirements.txt --upgrade
+pip install -e . --upgrade
+pip install pygdal=="`gdal-config --version`.*"
+sudo su
+pip 0V
+deactivate 
+pip3 -V
+pip3 install Django==3.2.18
+pip3 list
+workon geonode
+clear
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+sudo systemctl restart uwsgi.service 
+sudo su
+pip install django
+pip install uwsgi
+pip install asgiref
+pip list
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+sudo vim /etc/uwsgi/apps-available/geonode.ini 
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss-ltn
+ss -ltn
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+ss -ltn
+sudo su
+deactivate 
+cat setup..cf
+cat setup.cfg 
+python3.9 -m pip install Django==3.2.18
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+sudo systemctl restart uwsgi.service 
+ss -ltn
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+sudo apt-get remove gunicorn
+cat setup.cfg 
+python3.9 -m pip install uWSGI==2.0.21 gunicorn==20.1.0
+python3.9 -m pip install uWSGI==2.0.21
+python3.9 -m pip install gunicorn==20.1.0
+sudo pkill -9 -f uwsgi
+sudo systemctl restart geonode-uwsgi.service 
+sudo systemctl restart uwsgi.service 
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+ss -ltn
+sudo apt install uwsgi
+sudo apt install uwsgi-dbg
+sudo apt autoclean && sudo apt autoremove
+sudo pkill -9 -f uwsgi
+sudo uwsgi --ini /etc/uwsgi/apps-available/geonode.ini 
+sudo uwsgi --ini /etc/uwsgi/apps-enabled/geonode.ini 
+ss -ltn
+sudo systemctl start uwsgi
+sudo systemctl status uwsgi
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+sudo systemctl restart uwsgi
+sudo systemctl reload uwsgi
+sudo systemctl reload geonode-uwsgi
+history
+sudo su
+gunicorn
+workon geonode
+gunicorn
+gunicorn geonode/wsgi.py 
+gunicorn geonode/wsgi:application
+gunicorn geonode:application
+gunicorn geonode/wsgi:application
+gunicorn geonode/wsgi:app
+ss -ltn
+exit
+cd /opt/hyphae/
+ls
+./docker-build.sh 
+vim docker-compose.yml 
+sudo apt install docker-compose
+sudo apt autoremove 
+./docker-build.sh 
+docker-compose build
+docker compose build --no-cache 
+docker compose up -d
+ss -ltn
+docker compose down -v
+sudo systemctl start nginx.service 
+sudo systemctl start tom
+sudo systemctl start tomcat9
+sudo systemctl start uwsgi
+sudo systemctl start geonode-uwsgi
+sudo systemctl start postgresql
+ss -ltn
+exit
+sudo systemctl stop nginx.service && sudo systemctl stop geonode-uwsgi.service && sudo systemctl stop tomcat9.service && sudo systemctl stop postgresql
+sudo pkill -9 -f uwsgi
+sudo systemctl disable nginx.service && sudo systemctl disable geonode-uwsgi.service && sudo systemctl disable tomcat9.service && sudo systemctl disable  postgresql
+ss -ltn
+clear
+sudo add-apt-repository universe
+sudo apt-get update -y
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update -y
+sudo rm /var/lib/apt/lists/lock
+sudo apt-get update -y
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
+sudo apt-get install -y docker
+sudo apt-get install -y docker-compose 
+sudo apt-get install -y containerd
+sudo apt autoremove --purge
+sudo usermod -aG docker ${USER}
+su ${USER}
+sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get install     ca-certificates     curl     gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+exit
+clear
+sudo tail -F /var/log/uwsgi/app/geonode.log 
+ss -ltn
+ls /home/dinosubat/.virtualenvs/geonode
+vim /etc/uwsgi/apps-available/geonode.ini 
+:kkkclear
+clear
+pwd
+0;41;8M0;41;8mexit
+exit
+docker compose build 
+docker compose up -d
+sudo su
+docker exec -it nginx4hyphae sh -c 'mkdir /geonode-certificates/my_geonode'
+clear
+sudo su
+sudo chown $USER:$USER ~/fullchain.pem 
+sudo chown $USER:$USER ~/cert.pem 
+sudo su
+sudo chown $USER:$USER ~/privkey.pem 
+docker cp /home/dinosubat/privkey.pem nginx4hyphae:/geonode-certficates/my_geonode
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certficates/my_geonode
+docker-compose exec geonode sh
+docker compose exec geonode sh
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certficates/my_geonode/
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certficates/my_geonode
+ls /home/su
+ls /home/dinosubat/
+ls -la /home/dinosubat/
+docker exec -it nginx4hyphae sh -c 'mkdir /geonode-certificates/my_geonode'
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certficates/my_geonode
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker cp /home/dinosubat/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker-compose exec geonode sh
+dockercompose exec geonode sh
+docker-compose exec 
+docker compose exec geonode sh
+docker compose -logs -f
+docker compose logs -f
+docker compose restart django
+docker compose logs -f
+vim .env
+docker restart geoserver
+docker compose restart geoserver
+docker compose restart django
+docker compose logs -f
+ss -ltn
+workon geonode
+gunicorn 
+cd /opt/geonode
+cd /opt/hyphae/
+gunicorn geonode.wsgi:application --bind 0.0.0.0:8000
+gunicorn geonode.wsgi:application --bind 127.0.0.1:8000
+uwsgi
+uwsgi --chdir=/opt/hyphae --module=geonode.wsgi:application --env DJANGO_SETTINGS_MODULE=geonode.settings --master --pidfile=/tmp/geonode-master.pid --socket=127.0.0.1:8000 \ 
+uwsgi --chdir=/opt/hyphae --module=geonode.wsgi:application --env DJANGO_SETTINGS_MODULE=geonode.settings --master --pidfile=/tmp/geonode-master.pid \ --socket=127.0.0.1:8000 \ 
+sudo cu
+sudo su
+deactivate 
+clear
+cd ..
+sudo systemctl stop nginx.service && sudo systemctl stop geonode-uwsgi.service && sudo systemctl stop tomcat9.service && sudo systemctl stop uwsgi.service && sudo systemctl stop postgresql && sudo systemctl stop rabbitmq-server.service && sudo systemctl stop supervisor.service && sudo systemctl stop supervisor.service && sudo pkill -9 -f uwsgi
+sudo apt purge --autoremove build-essential python3-gdal=3.4.1+dfsg-1build4 gdal-bin=3.4.1+dfsg-1build4 libgdal-dev=3.4.1+dfsg-1build4 python3-all-dev python3.10-dev python3.10-venv virtualenvwrapper libxml2 libxml2-dev gettext libmemcached-dev zlib1g-dev libxslt1-dev libjpeg-dev libpng-dev libpq-dev git unzip gcc zlib1g-dev libgeos-dev libproj-dev sqlite3 spatialite-bin libsqlite3-mod-spatialite libsqlite3-dev openjdk-11-jdk-headless default-jdk-headless postgresql-13 postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13 postgresql-client-13 nginx uwsgi uwsgi-plugin-python3 erlang rabbitmq-server supervisor python3-certbot-nginx nginx-common
+sudo apt purge --autoremove build-essential python3-gdal gdal-bin libgdal-dev python3-all-dev python3.10-dev python3.10-venv virtualenvwrapper libxml2 libxml2-dev gettext libmemcached-dev zlib1g-dev libxslt1-dev libjpeg-dev libpng-dev libpq-dev git unzip gcc zlib1g-dev libgeos-dev libproj-dev sqlite3 spatialite-bin libsqlite3-mod-spatialite libsqlite3-dev openjdk-11-jdk-headless default-jdk-headless postgresql-13 postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13 postgresql-client-13 nginx uwsgi uwsgi-plugin-python3 erlang rabbitmq-server supervisor python3-certbot-nginx nginx-common
+ls
+cat test-uwsgi 
+sudo rm -Rf ~/.virtualenvs /opt/geonode /opt/tomcat /usr/lib/jvm/jre /etc/systemd/system/tomcat9.service /usr/lib/systemd/system/tomcat9.service /opt/data /etc/uwsgi /usr/bin/geonode-uwsgi-start.sh /etc/systemd/system/geonode-uwsgi.service /etc/nginx /var/log/uwsgi /var/log/postgresql /etc/supervisor /var/logs/geonode-celery.log /etc/postgresql /var/www/html /etc/apt/sources.list.d/pgdg.list /etc/apt/sources.list.d/ubuntugis-ubuntu-ubuntugis-unstable-jammy.list /etc/systemd/system/geonode-uwsgi.service /var/lib/postgresql /etc/uwsgi /var/log/postgresql /etc/postgresql /etc/apt/sources.list.d/rabbitmq_rabbitmq-server.list /etc/apt/sources.list.d/ubuntugis-ubuntu-ppa-jammy.list /etc/init.d/nginx /var/log/nginx /usr/bin/geonode /usr/geonode_updateip /etc/apt/sources.list.d/rabbitmq.list /etc/apt/trusted.gpg.d/ubuntugis-ubuntu-ppa.gpg /usr/share/keyrings/net.launchpad.ppa.rabbitmq.erlang.gpg /usr/share/keyrings/com.rabbitmq.team.gpg /var/log/letsencrypt /var/log/rabbitmq /var/log/supervisor 
+ls
+rm test-uwsgi 
+sudo trm test-uwsgi 
+sudo rm test-uwsgi 
+clear
+ls
+sudo apt purge python3.10-distutils python3.10-lib2to3 python3.10-minimal 
+vim ~/.bashrc 
+sudo rm /etc/apt/sources.list.d/deadsnakes-ubuntu-ppa-mantic.list
+sudo rm /etc/apt/sources.list.d/deadsnakes-ubuntu-ppa-mantic.list.save 
+sudo rm /etc/apt/trusted.gpg.d/deadsnakes_ubuntu_ppa.gpg 
+sudo rm /etc/apt/trusted.gpg.d/rabbitmq_ubuntu_rabbitmq-erlang.gpg 
+sudo rm /etc/apt/trusted.gpg.d/ubuntugis_ubuntu_ppa.gpg 
+sudo rm /run/uwsgi/
+sudo rm -Rf /run/uwsgi/
+clear
+sudo apt autoremove && sudo apt autoclean
+sudo journalctl --rotate && sudo journalctl --vacuum-time=1s
+clear
+ls
+docker ps
+sudo systemctl enable docker
+cd hyphae/
+vim .env
+docker system prune -a
+sudo apt update -y; sudo apt install python3-certbot-nginx -y
+sudo dpkg --configure -a
+sudo apt -f install
+sudo certbot certonly --standalone -d geo2.hyphae.design -d www.geo2.hyphae.design
+ss -ltn
+sudo systemctl stop nginx.service 
+sudo apt purge nginx nginx-common nginx-core 
+sudo apt autoremove && sudo apt autoclean 
+sudo dpkg --configure -a
+sudo apt -f uninstall
+sudo  apt update --fix-missing
+sudo dpkg --configure -a
+sudo apt purge python3-configargparse
+sudo apt purge python3-parsedatetime
+sudo apt purge python3-distro
+sudo apt purge python3-josepy
+sudo dpkg --configure -a
+sudo apt autoremove 
+sudo apt clean
+sudo apt autoclean 
+sudo dpkg-reconfigure python3
+sudo dpkg-reconfigure python3-tz
+sudo apt install --resinstall python3.9
+sudo apt install --reinstall python3.9
+sudo apt install --reinstall python3.9-dev
+sudo apt install --reinstall libpython3.9
+pip list
+pip -V
+sudo update-alternatives --remove python
+sudo update-alternatives --remove python3 /usr/bin/python3.10
+python3
+sudo apt install certbot 
+sudo certbot
+sudo apt install --reinstall python3-configargparse
+sudo apt purge --autoremove python3-configargparse
+sudo apt update
+sudo apt install certbot 
+sudo dpkg-reconfigure python3*
+sudo dpkg-reconfigure python3
+sudo dpkg-reconfigure python3.9
+sudo dpkg-reconfigure python3.9*
+sudo dpkg-reconfigure python3-configargparse
+ls -l /var/lib/dpkg/info | grep -i python3-configargparse
+sudo rm /var/lib/dpkg/info/python3-configargparse.*
+sudo rm /var/lib/dpkg/info/python3-parsedatetime.*
+sudo rm /var/lib/dpkg/info/python3-distro-info.*
+sudo rm /var/lib/dpkg/info/python3-icu.*
+sudo rm /var/lib/dpkg/info/python3-zope.*
+sudo rm /var/lib/dpkg/info/python3-tz.*
+sudo rm /var/lib/dpkg/info/python3-configobj.*
+sudo rm /var/lib/dpkg/info/python3-pyparsing.*
+sudo rm /var/lib/dpkg/info/python3-acme.*
+sudo rm /var/lib/dpkg/info/python3-josepy.*
+sudo rm /var/lib/dpkg/info/certbot.*
+sudo apt update
+sudo apt dist-upgrade 
+sudo rm /var/lib/dpkg/info/python3-acme.*
+sudo rm /var/cache/apt/archives/python3-acme_1.12.0-2+deb11u1_all.deb
+sudo rm /var/cache/apt/archives/python3-certbot_1.12.0-2_all.deb 
+sudo apt update && sudo apt upgrade 
+sudo rm /var/lib/dpkg/info/python3-josepy.*
+sudo rm /var/lib/dpkg/info/python3-rfc3339.*
+sudo rm /var/lib/dpkg/info/python3-distro.*
+clear
+sudo apt install certbot
+sudo dpkg --configure -a
+sudo apt -f install
+sudo apt install python3-requests-toolbelt 
+sudo apt install python3-acme 
+sudo apt install python3-acme-abi-q1
+sudo apt install python3-acme-abi-1
+sudo apt install python3-certbot
+sudo apt install certbot
+sudo certbot 
+sudo apt install python3-dev
+sudo apt-get clean
+sudo apt-get autoclean
+sudo dpkg --purge `COLUMNS=300 dpkg -l "*" | egrep "^rc" | cut -d\  -f3`
+sudo apt install certbot
+sudo rm -Rf b/var/cache/apt/archives/*
+sudo apt-get clean
+sudo apt install certbot
+sudo apt install python3-certbot
+sudo dpkg --configure certbot
+sudo dpkg --configure python3-certbot
+sudo dpkg --configure python3-acme
+sudo dpkg --configure python3-requests
+sudo apt purge python3
+sudo apt install python3.9
+sudo update-alternatives --remove-all python
+unlink /usr/bin/python3
+ls /usr/bin/python3
+sudo ln -s /usr/bin/python3.9 /usr/bin/python3
+sudo apt install --reinstall python3.9
+sudo apt install certbot
+sudo apt install python3-certbot
+clear
+sudo certbot certonly --standalone
+docker compose build
+sudo systemctl status docker
+docker compose build --no-cache
+vim docker-compose.yml 
+docker-compose 
+docker-compose build
+sudo apt install --reinstall docker
+sudo apt install --reinstall docker-compose
+sudo apt install --reinstall containerd
+sudo systemctl restart docker
+sudo systemctl start containerd
+sudo systemctl start docker
+sudo systemctl stopt docker
+sudo systemctl stop docker
+sudo systemctl start docker
+sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get install     ca-certificates     curl     gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+udo apt-get update
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt install docker-ce
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+clear
+cd /opt/hyphae/
+docker compose logs -f
+vim .env
+docker compose restart
+clear
+history
+docker exec -it nginx4hyphae sh -c 'mkdir /geonode-certificates/my_geonode'
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker cp /home/dinosubat/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker exec nginx4hyphae sh
+docker exec -it nginx4hyphae sh
+docker compose logs -f
+docker-compose up -d django
+docker compose up -d django
+docker compose logs django 
+docker compose logs -f django 
+docker compose logs -f geoserver 
+cat .env
+logout
+cd /opt/hyphae/
+rm -Rf ../.uwsgi_plugins_builder/
+sudo rm -Rf ../.uwsgi_plugins_builder/
+docker compose down -v
+docker system prune -a
+docker volume ls
+docker image ls
+clear
+docker compose build --no-cache 
+docker compose up -d
+ls
+cd ~/
+ls
+docker exec -it nginx4hyphae sh -c 'mkdir /geonode-certificates/my_geonode'
+docker cp cert.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker cp privkey.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker exec -it nginx4hyphae sh
+docker cp fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker exec -it nginx4hyphae sh
+cd /opt/hyphae/
+cat .env
+docker compose logs -f
+docker compose exec -it django bash
+docker compose restart django 
+docker compose logs -f
+docker compose restart geoserver 
+docker compose logs -f
+docker compose exec -it django bash
+docker compose restart django 
+docker compose logs -f
+docker compose exec -it django bash
+docker compose restart 
+docker cp /home/dinosubat/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker compose exec -it geonode sh
+docker compose exec -it django bash
+docker compose restart django 
+docker compose logs -f
+docker compose down -v
+docker system prune -a
+docker compose up -d --build --no-color 
+docker compose up -d --build --no-cache
+docker compose up -d --build
+docker exec -it nginx4hyphae sh -c 'mkdir /geonode-certificates/my_geonode'
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker cp /home/dinosubat/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker exec -it nginx4hyphae sh
+docker exec -it django4hyphae bash
+vim .env
+docker compose restart django 
+docker compose restart rabbitmq 
+docker compose logs -f
+docker exec -it django4hyphae bash
+docker compose restart 
+vim .env
+history 
+docker cp /home/dinosubat/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker exec -it nginx4hyphae sh
+docker compose logs -f
+docker compose down
+docker compose down -v
+docker rmi geonode/geonode:4.0 geonode/geoserver:2.23.0 geonode/geoserver_data:2.23.0 geonode/nginx:4.0 geonode/postgis:13 rabbitmq:3.7-alpine 
+docker image ls
+docker compose -up -d --build
+docker compose up -d --build
+ss -ltn
+history
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker cp /home/dinosubat/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker exec -it nginx4hyphae sh
+docker cp /home/dinosubat/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker exec -it nginx4hyphae sh
+docker exec -it nginx4hyphae sh -c 'mkdir /geonode-certificates/my_geonode'
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker cp /home/dinosubat/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker exec -it nginx4hyphae sh
+docker exec -it nginx4hyphae sh -c 'mkdir /geonode-certificates/my_geonode'
+docker cp /home/dinosubat/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker cp /home/dinosubat/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode
+docker exec -it nginx4hyphae sh
+cat .env
+cd /opt/hyphae/
+docker compose logs -f
+logout
+cd /opt/hyphae/
+docker compose exec -it geoserver bash
+exit
+who -H
+ls
+wget https://build.geoserver.org/geoserver/2.23.x/ext-latest/geoserver-2.23-SNAPSHOT-vectortiles-plugin.zip
+mkdir geonode_files
+ls
+mv cert.pem privkey.pem geoserver-2.23-SNAPSHOT-vectortiles-plugin.zip  geonode_files/
+ls
+mv fullchain.pem geonode_files/
+ls
+rm data-2.23.0.zip 
+sudo rm -r data-2.23.0.zip  gdal-3.2.2/
+ls
+cd geonode_files/
+ls
+rm cert.pem 
+mkdir ssl_certs
+mv privkey.pem fullchain.pem ssl_certs/
+ls
+mkdir vector-tiles 
+mv geoserver-2.23-SNAPSHOT-vectortiles-plugin.zip vector-tiles/
+ls
+clear
+mv vector-tiles/
+cd vector-tiles/
+clear
+ls
+unzip geoserver-2.23-SNAPSHOT-vectortiles-plugin.zip 
+sudo apt install unzip
+clear
+unzip geoserver-2.23-SNAPSHOT-vectortiles-plugin.zip 
+ks
+ls
+docker cp java-vector-tile-1.3.9.jar geoserver4hyphae:/
+docker cp protobuf-java-3.9.1.jar geoserver4hyphae:/
+docker cp gs-vectortiles-2.23-SNAPSHOT.jar geoserver4hyphae:/
+ls
+docker cp gson-2.3.1.jar geoserver4hyphae:/
+docker restart geoserver4hyphae 
+cd /opt/hyphae/
+docker compose logs -f geoserver 
+clear
+who -H
+logout
+sudo apt update
+sudo apt dist-upgrade 
+ss -ltn
+sudo apt autoremove 
+sudo apt autoclean 
+clear
+cd /opt/hyphae/
+docker-compose up -d
+docker compose up -d
+ss -ln
+ss -ltn
+clear
+ls
+ls /
+ls ~/
+docker cp /home/dinosubat/geonode_files/ssl_certs/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker cp /home/dinosubat/geonode_files/ssl_certs/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker exec -it nginx4hyphae sh
+exit
+clear
+sudo reboot now
+sudo apt update && sudo apt dist-upgrade 
+ss -ltn
+cd /opt/hyphae/
+docker compose up -d
+clear
+ss -ltn
+logout
+history 
+ss -ltn
+docker cp /home/dinosubat/geonode_files/ssl_certs/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker cp /home/dinosubat/geonode_files/ssl_certs/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker exec -it nginx4hyphae sh
+cat .en
+cd /opt/hyphae/
+cat .env
+clear
+docker exec -it django4hyphae bash
+logout
+docker exec -it django4hyphae bash
+docker restart django4hyphae 
+docker logs -f django4hyphae 
+docker exec -it django4hyphae bash
+cd /opt/hyphae/
+docker-compose restart
+docker compose restart
+docker cp /home/dinosubat/geonode_files/ssl_certs/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker cp /home/dinosubat/geonode_files/ssl_certs/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker exec -it nginx4hyphae sh
+sudo apt install docker-compose
+docker compose down
+git remote -v
+git fetch && git checkout
+cp .env ~/geonode_files/
+git pull
+git config --global user.email "info@geo2.hyphae.design"
+git config --global user.name "hyphae.design"
+git pull
+git rebase 
+git rebase mast
+git rebase master
+git config pull.ff only
+git pull
+git rebase
+git pull
+git fetch && git checkout
+git merge
+git merge master
+git rebase master
+git rebase
+git merge
+git status
+git checkout .
+rm -Rf *
+ls
+cd ..
+git clone https://github.com/GeoNode/geonode.git -b 4.1.x hyphae/
+git clone https://github.com/GeoNode/geonode.git -b 4.1.x hyphae
+rm -Rf hyphae/
+sudo rm -Rf hyphae/
+git clone https://github.com/GeoNode/geonode.git -b 4.1.x hyphae
+sudo mkdir -p /opt/hypae/
+sudo usermod -a -G www-data $USER
+sudo chown -Rf geonode:www-data /opt/hypae/
+sudo chown -Rf $USER:www-data /opt/hypae/
+sudo chmod -Rf 775 /opt/hypae/
+git clone https://github.com/GeoNode/geonode.git -b 4.1.x hyphae
+cd hypae/
+git clone https://github.com/GeoNode/geonode.git -b 4.1.x .
+ls
+mv ~/geonode_files/.env .
+cat .env
+ss -ltn
+docker compose build --no-cache 
+docker compose up -d
+docker system prune
+ss --ltn
+ss -ltn
+history
+docker cp /home/dinosubat/geonode_files/ssl_certs/privkey.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker cp /home/dinosubat/geonode_files/ssl_certs/fullchain.pem nginx4hyphae:/geonode-certificates/my_geonode/
+docker exec -it nginx4hyphae sh
+exit

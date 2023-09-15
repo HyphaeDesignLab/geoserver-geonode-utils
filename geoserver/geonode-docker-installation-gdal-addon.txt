@@ -1,0 +1,45 @@
+Log into GeoServer container
+docker exec -it geoserver4hyphae bash
+
+Installed GDAL dependencies prior to installing GDAL. They include:
+libroj-dev - PROJ library required by GDAL for peojection and transformation computations
+libgeos-dev - It implements the OGC Simple Features geometry model and provides all the spatial functions in that standard and core dependency of PostGIS, QGIS, GDAL, Shapely etc.
+swig - wrapper convering variables of GDAL's C API to Java (for GeoServer) and / or Python and store it into variables of another and vice versa
+
+Installation done via the following command
+apt install libproj-dev libgeos-dev swig
+
+Downloaded GDAL version (source binaries) same as one being used in GeoServer, in this case version 3.2.2
+wget https://github.com/OSGeo/gdal/releases/download/v3.2.2/gdal-3.2.2.tar.gz
+
+Unzipped the contents in /gdal/ directory in root
+tar -xzf gdal-3.2.2.tar.gz
+
+Navigated to directory and configured GDAL with addons on java
+./configure --with-java=/usr/local/openjdk-11/
+
+Run make command to build. You can use number of cores in your comp (check using nproc, 4 in this case). Please note that this may take some time.
+make -j4
+
+Install GDAL using
+make install
+
+Add paths and symbolic links using
+ldconfig
+
+Optionally:
+make sure `ant` is installed via `apt install ant`
+
+Build SWIG Java specific binaries by navigating into swig/java and running make as previous
+cd swig/java/ && make -j4
+
+Install using
+make install
+
+Add the follwing variables to startup bash script at ~/.bashrc
+export GDAL_BIN=/gdal/gdal-3.2.2/apps/
+export GDAL_DATA=/gdal/gdal-3.2.2/data/
+export LD_LIBRARY_PATH=/gdal/gdal-3.2.2/swig/java/
+
+Restart geoserver container and check ineractive logs using
+docker logs geoserver4hyphae -f

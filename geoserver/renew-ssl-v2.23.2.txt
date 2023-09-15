@@ -1,0 +1,8 @@
+AWS Geoserver 2.23.2 (**different** from 2.21.1)
+No need to use or generate jks keys (for 2.21.2).
+Simply import the letsencrypt generated keys to conf file
+<SSLHostConfig>
+<Certificate certificateFile="conf/cert.pem"
+certificateKeyFile="conf/privkey.pem"
+certificateChainFile="conf/chain.pem" />
+</SSLHostConfig>
