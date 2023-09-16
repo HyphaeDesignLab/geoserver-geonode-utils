@@ -39,4 +39,13 @@ OR
 
 You can list a directory, a file, or both, or multiple of both as arguments and 
 the script will upload all files of type .shp, .geojson, .tif as individual datasets.
-Zip archives will be auto-unzipped and its contents will be uploaded according to the same rules. 
+Zip archives will be auto-unzipped and its contents will be uploaded according to the same rules.
+
+Script will complain if the AUTH access token expires or is missing. It will ask you to re-run `auth.sh run`
+
+#### Output of Uploader
+
+Once uploaded all dataset(s) info is saved to *`uploads.log`*. The log file will presist and keep 
+getting appended more info to it from subsequent uploads. No information can get lost.
+
+The data saved to `uploads.log` is dataset ID, dataset URL and dataset Embed URL
