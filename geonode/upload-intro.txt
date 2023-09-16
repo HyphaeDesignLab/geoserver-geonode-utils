@@ -1,0 +1,11 @@
+  -----------------------------------------------------------------
+   Genode Layer/Data Auto-uploader
+  -----------------------------------------------------------------
+
+  You can upload a single/multiple files/file-sets by:
+    passing upload director(ies) and/or file-path(s) as arguments          OR
+    getting prompted at the command line for each file/directory to upload
+
+    one or multiple file-path(s), director(ies), or BOTH are allowed
+    file types: .shp, .geojson, .tif, .zip
+
