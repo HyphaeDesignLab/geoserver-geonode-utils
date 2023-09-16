@@ -30,3 +30,13 @@ of grant type "Resource owner password-based". It will fetch the access token an
 save it to `.geonode.conf`
 
 ### Uploader 
+
+Run `upload.sh` and follow prompts.  You will be given instructions. 
+
+You can run this entirely interactively (waiting for prompts from the script)
+
+OR 
+
+You can list a directory, a file, or both, or multiple of both as arguments and 
+the script will upload all files of type .shp, .geojson, .tif as individual datasets.
+Zip archives will be auto-unzipped and its contents will be uploaded according to the same rules. 
