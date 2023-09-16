@@ -21,12 +21,12 @@ geonode_auth_password() {
   fi
 
   . .geonode.conf
-#  curl -k \
-#    -X POST \
-#    -d "grant_type=password&username=$user&password=$pass" \
-#    -u"$client_id:$client_secret" \
-#    https://geo2.hyphae.design/o/token/ > .access_token_response.txt 2>/dev/null
-  echo '{"access_token": "'$RANDOM'"}' > .access_token_response.txt
+  curl -k \
+    -X POST \
+    -d "grant_type=password&username=$user&password=$pass" \
+    -u"$client_id:$client_secret" \
+    https://geo2.hyphae.design/o/token/ > .access_token_response.txt 2>/dev/null
+  # TEST: echo '{"access_token": "'$RANDOM'"}' > .access_token_response.txt
   grep -Eo 'access_token" *: *"([^"]+)' .access_token_response.txt > .access_token_match.txt 2>/dev/null
   if [ "$?" = "1" ]; then
     echo 'no access token in response: '
