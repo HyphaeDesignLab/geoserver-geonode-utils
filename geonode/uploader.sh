@@ -1,3 +1,6 @@
+geonode_verbose_mode=0
+geonode_upload_results_dir=''
+
 echo_if_verbose() {
   if [ $1 = 1 ]; then
     local args=($@);
@@ -18,6 +21,19 @@ unzip_files_and_ls() {
   echo $tmp_file_dir
 }
 
+geonode_api_auth_test() {
+  . .geonode.conf
+  echo > auth-test.json
+  curl --location --request GET -k -H "Authorization: Bearer $access_token" 'https://geo2.hyphae.design/api/v2/users' > auth-test.json 2>/dev/null
+  grep not_authenticated auth-test.json >/dev/null 2>/dev/null
+  if [ "$?" = "0" ]; then
+    echo ' API authentication failed. Please request another API access token via "auth.sh run"'
+    rm auth-test.json
+    return 1
+  fi
+  rm auth-test.json
+  return 0
+}
 geonode_upload_single_api_call() {
   . .geonode.conf
 
@@ -32,6 +48,9 @@ geonode_upload_single_api_call() {
   local args_i=0
   local args=()
   local args_orig=($@)
+
+  echo_if_debug "debug: Upload API start:" ${args_orig[@]}
+
   # loop on 2nd (i=1) argument till end
   for fff in "${args_orig[@]:1}"; do
     local fff_slash_escaped=$(sed -E -e 's@/@\/@' <<< $fff)
@@ -49,9 +68,10 @@ geonode_upload_single() {
   local file_type="$2"
   local zip_type="$3"
   local file_type_number='';
+
   # no args => all prompts from the command line
   if [ "$geonode_verbose_mode" = '1' ]; then
-    read -p ' Which kind of data to you want to upload? SHP (1), GeoJSON (2), GeoTIF (3) ' file_type_number
+    read -p ' Which kind of data to you want to upload? SHP (1), GeoJSON (2), GeoTIF (3) (.zip archives allowed): ' file_type_number
     local next_prompt_message=''
     if [ "$file_type_number" = "1" ]; then
       echo ' enter the path for: SHP file (both .shp or .zip acceptable)'
@@ -102,6 +122,13 @@ geonode_upload_single() {
     file_path=$(ls -1 $unzipped_file_path/*.$file_type | head -1 | tr -d '\n')
   fi
 
+  if [ ! -f $file_path ] || [ ! -s $file_path ]; then
+    echo_if_debug "debug: file upload empty or not exist: $file_path"
+    echo " file upload does not exist or is empty $file_path" >> $geonode_upload_results_dir/errors.log
+    echo " file upload does not exist or is empty $file_path" >> uploads.log
+    return 1
+  fi
+
   local requisite_files=()
   case $file_type in
     shp)
@@ -126,9 +153,9 @@ geonode_upload_single() {
   done
 
   # Run API calls to upload
-  echo Uploading $file_type "${args[@]}" >>  geonode_upload.log
-  sleep 1
+  echo "Uploading $file_type" "${args[@]}" >>  uploads.log
   geonode_upload_single_api_call $file_type "${args[@]}"
+  sleep 1
 
   # Clean-up ZIP Archive
   if [ "$unzipped_file_path" != "" ] && [ -d "$unzipped_file_path" ]; then
@@ -136,69 +163,27 @@ geonode_upload_single() {
   fi
 }
 
-geonode_verbose_mode=0
-geonode_upload_results_dir=''
 geonode_upload_main() {
   if [ "$1" = "" ]; then
     geonode_verbose_mode=1
-    echo ' You can upload a single/multiple files/sets of files by'
-    echo '  passing the director(ies) or file(s) paths as arguments'
-    echo '  OR'
-    echo '  getting prompted at the command line for each file/directory'
-    echo
-    echo ' If you choose to pass directories or file paths/names as command line arguments, then'
-    echo '  you will get no prompts, and be able to run the script programmatically'
-    echo
-    echo ' Here is the style of directory/file path arguments to pass'
-    echo '  upload.sh some/path/to/dir some/path/to/file.shp a/third/file.geojson'
-    echo '            shp=some/other/file.zip '
-    echo '            zip-type=shp|geojson|tif '
-    echo '    if argument is a directory, then all files in the FIRST level of the directory '
-    echo '     will be listed and uploaded as SEPARATE individual datasets'
-    echo '    if argument is a file, then it will uploaded as a SINGLE dataset'
-    echo
-    echo '    if argument begins on a <type>=some/path/to/file.<ext>, then the dataset will be treated as'
-    echo '      the <type> specified; e.g. shp=some/file;  this is useful to .zip archives containing a set of files'
-    echo '      types allowed: geojson, shp, tif'
-    echo
-    echo '    if argument begins on a <type>=some/path/to/dir, then the all ZIP files in dir will be treated as'
-    echo '      the <type> specified; types allowed: geojson, shp, tif'
-    echo
-    echo '    if argument is a ZIP file archive -OR- one/many of the files in the directory is a ZIP file archive, '
-    echo '      it will be unzipped to a temporary location and its individual files uploaded as a SINGLE dataset'
-    echo '      it helps to specify what the ZIP archive contains by prefixing it with "shp=some/archive.zip'
-    echo
-    echo '    if argument begins on "zip-type=<type>" then it will tell the script to treat ALL ZIP archives encountered as this type'
-    echo
-    echo '    if no "zip-type=<type>" is specified and the individual ZIP archive argument(s) has no type prefix (shp=some/file.zip)'
-    echo '       then you will BE PROMPTED on the command line; YOU WILL NOT BE ABLE TO JUST RUN this PROGRAMMATICALLY; SCRIPT NEEDS YOUR INPUT to decide'
-    echo '    '
-    echo '    '
-    echo '    for SHP file sets: you can specify just the SHP path/to/some_file.shp and script will '
-    echo '       automatically look for the other files expected: SLD (style), SHX, PRJ, XML, DBF'
-    echo '       they must be named the same and in the same directory:'
-    echo '       e.g. if path/to/some_file.shp, then the SLD file must be path/to/some_file.sld'
-    echo '       you can also specify the ZIP archive containing all of the files in the set'
-    echo
-    echo '    for GEOJSON and TIF file sets: you can specify just the .geojson/.tif file path '
-    echo '       the script will automatically look for an SLD (style) file named the same and in the same directory:'
-    echo '       e.g. if path/to/some_file.geojson, then the SLD file must be path/to/some_file.sld'
-    echo '       you can also specify the ZIP archive containing all of the files in the set'
-    echo '    '
+  fi
+
+  geonode_api_auth_test
+  if [ "$?" = '1' ]; then
+    return
   fi
 
   ### Make an upload dir to save results of API calls to for follow-up API calls
-  geonode_upload_results_dir=$(mktemp)
-  # remove actual file
-  rm $geonode_upload_results_dir
-  # make a directory with same name
-  mkdir $geonode_upload_results_dir
+  geonode_upload_results_dir=uploads/$(date +%Y-%m-%d---%H-%M-%S)
+  # make a directory
+  mkdir -p $geonode_upload_results_dir
 
+  echo '------------------------' >>  uploads.log
   # Add current date
-  date >>  geonode_upload.log
+  date >>  uploads.log
   # current upload folder
-  echo $geonode_upload_results_dir >> geonode_upload.log
-  echo >>  geonode_upload.log
+  echo 'Upload dir: ' $geonode_upload_results_dir >> uploads.log
+  echo >>  uploads.log
 
 
   ###
@@ -257,8 +242,7 @@ geonode_upload_main() {
     done
   fi
 
-  echo '------------------------' >>  geonode_upload.log
-  echo >>  geonode_upload.log
+  echo >>  uploads.log
 }
 
-# ecoreg/Oakland_ecoregion.shp
+geonode_api_auth_test
