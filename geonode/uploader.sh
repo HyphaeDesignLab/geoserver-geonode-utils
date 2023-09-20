@@ -69,6 +69,7 @@ geonode_upload_single() {
   local zip_type="$3"
   local file_type_number='';
 
+  local matcing_extensions=''
   # no args => all prompts from the command line
   if [ "$geonode_verbose_mode" = '1' ]; then
     read -p ' Which kind of data to you want to upload? SHP (1), GeoJSON (2), GeoTIF (3), GPKG (4) (.zip archives allowed), MrSID (5): ' file_type_number
@@ -76,18 +77,23 @@ geonode_upload_single() {
     if [ "$file_type_number" = "1" ]; then
       next_prompt_message=' enter the path for SHP file (both .shp or .zip acceptable) (.shp or .zip): '
       file_type='shp'
+      matcing_extensions='shp'
     elif [ "$file_type_number" = "2" ]; then
       next_prompt_message=' enter the path for: GeoJSON file (.geojson or .zip): '
       file_type='geojson'
+      matcing_extensions='geojson|json'
     elif [ "$file_type_number" = "3" ]; then
       next_prompt_message=' enter the path for: Geo TIF file (.tif or .zip): '
       file_type='tif'
+      matcing_extensions='tif|gtif|tiff'
     elif [ "$file_type_number" = "4" ]; then
       next_prompt_message='  enter the path for Geo Package file (.gpkg): '
       file_type='gpkg'
+      matcing_extensions='gpkg'
     elif [ "$file_type_number" = "5" ]; then
       next_prompt_message='  enter the path for Geo Package file (.sid or .zip): '
       file_type='sid'
+      matcing_extensions='sid'
     else
       echo ' incorrect file type chosen'
       return 1
@@ -107,7 +113,7 @@ geonode_upload_single() {
       fi
     fi
     # ls the main file in unzipped archive
-    file_path=$(ls -1 $unzipped_file_path/*.$file_type | head -1 | tr -d '\n')
+    file_path=$(find $unzipped_file_path/ -type f | grep -iE "\.($matcing_extensions)\$"| head -1 | tr -d '\n')
   fi
 
   if [ ! -f $file_path ] || [ ! -s $file_path ]; then
@@ -195,7 +201,9 @@ geonode_upload_main() {
     for arg in "$@"; do
       local prefix=$(sed -nE -e '/^[a-z\-]+=/{s/^([a-z\-]+).+/\1/;p;}' <<< $arg);
 
-      local ext=$(sed -nE -e '/\.([a-z]+)$/{s/^.+\.([a-z]+)$/\1/;p;}' <<< $arg);
+      # extract file extension and replace alternate extensions with standard one; make lower case
+      local ext=$(sed -nE -e '/\.([a-z]+)$/{s/^.+\.([A-Za-z]+)$/\1/;p;}' <<< $arg | tr 'A-Z' 'a-z' | sed -E -e 's/^(gtif|tiff)$/tif/;s/^json$/geojson/');
+
       local path=$(sed -E -e 's/^[a-z\-]+=//' <<< $arg);
 
       if [ "$prefix" = "zip-type" ]; then
@@ -214,7 +222,7 @@ geonode_upload_main() {
             geonode_upload_single $fff $ext_i;
           fi
         done
-      elif [ "$ext" = 'zip' ] || [ "$ext" = 'ZIP' ]; then
+      elif [ "$ext" = 'zip' ]; then
         local zip_type_i="$zip_type"
         if [ "$prefix" != "" ]; then
           zip_type_i="$prefix"
