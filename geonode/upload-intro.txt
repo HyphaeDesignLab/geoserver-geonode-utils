@@ -2,10 +2,21 @@
    Genode Layer/Data Auto-uploader
   -----------------------------------------------------------------
 
-  You can upload a single/multiple files/file-sets by:
-    passing upload director(ies) and/or file-path(s) as arguments          OR
-    getting prompted at the command line for each file/directory to upload
+  You can upload single/multiple files/file-sets as arguments OR (if no upload argument passed)
+  as prompted at the command line for each file/directory to upload.
 
-    one or multiple file-path(s), director(ies), or BOTH are allowed
-    file types: .shp, .geojson, .tif, .zip
+  One or multiple file-path(s), director(ies), or BOTH are allowed
+  File types allowed: .shp, .geojson, .tif, .zip, .gpkg
+
+  Usage examples:
+
+        upload.sh some/path/to/file.shp
+        upload.sh some/path/to/file.gpkg
+        upload.sh some/path/to/dir
+        upload.sh some/path/to/dir some/path/to/second/file.shp
+        upload.sh shp=some/other/file.zip
+        upload.sh some/other/zipfile-without-type-prefix.zip   zip-type=shp|geojson|tif
+
+
+
 

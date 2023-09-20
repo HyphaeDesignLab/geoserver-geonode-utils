@@ -71,35 +71,23 @@ geonode_upload_single() {
 
   # no args => all prompts from the command line
   if [ "$geonode_verbose_mode" = '1' ]; then
-    read -p ' Which kind of data to you want to upload? SHP (1), GeoJSON (2), GeoTIF (3) (.zip archives allowed): ' file_type_number
+    read -p ' Which kind of data to you want to upload? SHP (1), GeoJSON (2), GeoTIF (3), GPKG (4) (.zip archives allowed), MrSID (5): ' file_type_number
     local next_prompt_message=''
     if [ "$file_type_number" = "1" ]; then
-      echo ' enter the path for: SHP file (both .shp or .zip acceptable)'
-      echo '  if .shp - all other requisite files like: SLD (style), SHX, DBF, PRJ, XML, '
-      echo '   will be checked by script; they should be named the same file-name base'
-      echo '   with the respecitve file extension: e.g. if SHP file is somefile.shp, then '
-      echo '   the SLD file is somefile.sld'
-      echo '  if .zip - all requisite files will be extracted from the zip archive'
-      echo
-
-      next_prompt_message=' enter file path (.shp or .zip): '
+      next_prompt_message=' enter the path for SHP file (both .shp or .zip acceptable) (.shp or .zip): '
       file_type='shp'
     elif [ "$file_type_number" = "2" ]; then
-      echo ' enter the path for: GeoJSON file (.geojson or .zip)'
-      echo '  if .geojson, the style file (SLD) will be checked by script; it should be named the same file-name base'
-      echo '   e.g. if GeoJSON file is somefile.geojson, then the SLD file is somefile.sld'
-      echo '  if .zip - all requisite files will be extracted from the zip archive and inspected'
-      echo
-      next_prompt_message=' enter file path (.geojson or .zip): '
+      next_prompt_message=' enter the path for: GeoJSON file (.geojson or .zip): '
       file_type='geojson'
     elif [ "$file_type_number" = "3" ]; then
-      echo ' enter the path for: Geo TIF file (.tif or .zip)'
-      echo '  if .tif, the style file (SLD) will be checked by script; it should be named the same file-name base'
-      echo '   e.g. if GeoJSON file is somefiletifgeojson, then the SLD file is somefile.sld'
-      echo '  if .zip - all requisite files will be extracted from the zip archive'
-      echo
-      next_prompt_message=' enter file path (.tif or .zip): '
+      next_prompt_message=' enter the path for: Geo TIF file (.tif or .zip): '
       file_type='tif'
+    elif [ "$file_type_number" = "4" ]; then
+      next_prompt_message='  enter the path for Geo Package file (.gpkg): '
+      file_type='gpkg'
+    elif [ "$file_type_number" = "5" ]; then
+      next_prompt_message='  enter the path for Geo Package file (.sid or .zip): '
+      file_type='sid'
     else
       echo ' incorrect file type chosen'
       return 1
@@ -112,7 +100,7 @@ geonode_upload_single() {
   if [[ "$file_path" = *'.zip'* ]]; then
     unzipped_file_path=$(unzip_files_and_ls $file_path);
     if [ "$file_type" = "" ]; then
-      read -p " what kind of file/data is in the ZIP file archive $file_path? (shp, geojson, tif): " file_type
+      read -p " what kind of file/data is in the ZIP file archive $file_path? (shp, geojson/json, tif/tiff/gtif, gpkg): " file_type
       if [ "$file_type" = "" ]; then
         echo " no file type given, skipping file $file_path"
         return 1;
@@ -139,6 +127,9 @@ geonode_upload_single() {
       ;;
     tif)
       requisite_files=(tif sld)
+      ;;
+    gpkg)
+      requisite_files=(gpkg)
       ;;
   esac
 
@@ -211,7 +202,7 @@ geonode_upload_main() {
         # skip zip-type, already extracted above
         continue
       elif [ -d "$path" ]; then
-        for fff in $(find $path -maxdepth 1 -type f \( -iname '*.shp' -or -iname '*.geojson' -or -iname '*.tif' -or -iname '*.zip' \) ); do
+        for fff in $(find $path -maxdepth 1 -type f -name '*.*' | grep -E '(' ); do
           local ext_i=$(sed -E -e 's/.+\.([a-z]+)/\1/' <<< $fff);
           if [ "$ext_i" = 'zip' ] || [ "$ext_i" = 'ZIP' ]; then
             local zip_type_i="$zip_type"

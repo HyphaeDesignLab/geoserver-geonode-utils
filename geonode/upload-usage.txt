@@ -1,31 +1,26 @@
-    Usage examples:
-    
-        upload.sh some/path/to/file.shp
-        upload.sh some/path/to/dir
-        upload.sh some/path/to/dir some/path/to/second/file.shp
-        upload.sh shp=some/other/file.zip
-        upload.sh some/other/zipfile-without-type-prefix.zip   zip-type=shp|geojson|tif
-                 
-        directory: 
-           all immediate children files in a directory will uploaded as INDIVIDUAL datasets
-        file: 
-            a file and its requisite (associated) files will be uploaded as ONE dataset
-            associated files for:
-            .shp:  .sld (style), .shx, .dbf, .prj, and .xml
-            .geojson:  .sld (style)
-            .tif:  .sld (style)
-            associated files must be in the same directory and have the same file basename:
-              some/dir/file.shp some/dir/file.sld ...
-        ZIP archives:
-            will be unzipped to a temporary location and individual files uploaded as ONE dataset
-            need to tell the uploader script what type of data they contain by
-               prefixing it like this "shp=some/archive.zip        OR
-               adding an extra argument "zip-type=<type>" to treat ALL encountered ZIP archives as <type>
-               ELSE, the script will prompt you to ask what type the ZIP archive is
+Detaile
+    directory:
+       all immediate children files in a directory will uploaded as INDIVIDUAL datasets
+    file:
+        a file and its requisite (associated) files will be uploaded as ONE dataset
+        associated files for:
+        .shp:  .sld (style), .shx, .dbf, .prj, and .xml
+        .geojson:  .sld (style) (.geojson alternate file extension is .json)
+        .tif:  .sld (style) (.tif alternate file extensions are .gtif and .tiff)
+        .gpkg:  no other files
+        .sid:  .aux, .sid.aux.xml, .xml, .sdw, .txt
+        associated files must be in the same directory and have the same file basename:
+          some/dir/file.shp some/dir/file.sld ...
+    ZIP archives:
+        will be unzipped to a temporary location and individual files uploaded as ONE dataset
+        need to tell the uploader script what type of data they contain by
+           prefixing it like this "shp=some/archive.zip        OR
+           adding an extra argument "zip-type=<type>" to treat ALL encountered ZIP archives as <type>
+           ELSE, the script will prompt you to ask what type the ZIP archive is
 
-        multiple ZIP archives in a directory:
-            we need to tell the uploader script what type of ZIP archives' data in the directory by:
-               adding an extra argument "zip-type=<type>"
-               ELSE, the script will prompt you to ask what type the ZIP archive is
+    multiple ZIP archives in a directory:
+        we need to tell the uploader script what type of ZIP archives' data in the directory by:
+           adding an extra argument "zip-type=<type>"
+           ELSE, the script will prompt you to ask what type the ZIP archive is
 
 Press "q" to quit reading instructions and continue to script

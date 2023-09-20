@@ -3,7 +3,7 @@
 cat upload-intro.txt
 if [ "$1" = "" ]; then
   echo
-  read -p ' Do you want to read more detailed usage examples/instructions? (y) ' zzz
+  read -p ' Do you want to read more detailed explanation of usage options/arguments? (y) ' zzz
   if [ "$zzz" = "y" ]; then
     cat upload-intro.txt upload-usage.txt | less
     echo
@@ -35,6 +35,10 @@ echo ' Fetching datasets'
 . dataset.sh
 geonode_datasets_get
 echo ' ... done'
+
+echo >> uploads.log
+echo 'Uploaded Temp Dir with detailed logs: ' $geonode_upload_results_dir >> uploads.log
+echo >> uploads.log
 
 echo -n 'Uploaded Datasets: ' >> uploads.log
 for geonode_upload_dataset_id in $(ls $geonode_upload_results_dir/dataset-*.json 2>/dev/null | sed -E -e 's/.+dataset-([0-9]+).json/\1/'); do
