@@ -42,9 +42,10 @@ geonode_upload_single_api_call() {
   # FINAL ARG-PARSER
   #  translates from <ext>=some/path/to/filename.<ext> to correct geonode API arguments
   #  Geonode expects
-  #    'base_file=@some/path/file.shp' or .geojson or .tif
-  #    'sld_file=@some/path/some_style_file.sld" (optional for styles)
-  #    ...  for .shp files: .shx, dbf, prj, xml
+  #    'base_file=@some/path/file.shp' or .geojson ... or... the_main_file.<type>
+  #    'sld_file=@some/path/some_style_file.sld" (optional for styles) for .geojson, .tif, .shp
+  #    'shx_file=@...', etc: .shx, dbf, prj, xml for .shp files
+  #    ... .aux, .sid.aux.xml, .xml, .sdw, .txt for .sid files
   local args_i=0
   local args=()
   local args_orig=($@)
@@ -91,9 +92,9 @@ geonode_upload_single() {
       file_type='gpkg'
       matcing_extensions='gpkg'
     elif [ "$file_type_number" = "5" ]; then
-      next_prompt_message='  enter the path for Geo Package file (.sid or .zip): '
+      next_prompt_message='  enter the path for MrSID file (.sid or .zip): '
       file_type='sid'
-      matcing_extensions='sid'
+      matcing_extensions='aux|sid.aux.xml|xml|sdw|txt'
     else
       echo ' incorrect file type chosen'
       return 1
