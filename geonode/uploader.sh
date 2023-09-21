@@ -50,7 +50,7 @@ geonode_upload_single_api_call() {
   local args=()
   local args_orig=($@)
 
-  echo_if_debug "debug: Upload API start:" ${args_orig[@]}
+  echo_if_debug "single api call: upload start:" ${args_orig[@]}
 
   # loop on 2nd (i=1) argument till end
   for fff in "${args_orig[@]:1}"; do
@@ -69,6 +69,8 @@ geonode_upload_single() {
   local file_type="$2"
   local zip_type="$3"
   local file_type_number='';
+
+  echo_if_debug "upload single: file_path=$file_path file_type=$file_type zip_type=$zip_type"
 
   local matcing_extensions=''
   # no args => all prompts from the command line
@@ -153,7 +155,7 @@ geonode_upload_single() {
   done
 
   # Run API calls to upload
-  echo "Uploading $file_type" "${args[@]}" >>  uploads.log
+  echo_and_log "Uploading $file_type" "${args[@]}"
   geonode_upload_single_api_call $file_type "${args[@]}"
   sleep 1
 
