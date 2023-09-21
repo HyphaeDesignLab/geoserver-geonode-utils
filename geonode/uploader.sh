@@ -94,7 +94,7 @@ geonode_upload_single() {
     elif [ "$file_type_number" = "5" ]; then
       next_prompt_message='  enter the path for MrSID file (.sid or .zip): '
       file_type='sid'
-      matcing_extensions='aux|sid.aux.xml|xml|sdw|txt'
+      matcing_extensions='sid'
     else
       echo ' incorrect file type chosen'
       return 1
@@ -127,21 +127,23 @@ geonode_upload_single() {
   local requisite_files=()
   case $file_type in
     shp)
-      requisite_files=(shp sld shx dbf prj xml)
+      requisite_files=(sld shx dbf prj xml)
       ;;
     geojson)
-      requisite_files=(geojson sld)
+      requisite_files=(sld)
       ;;
     tif)
-      requisite_files=(tif sld)
+      requisite_files=(sld)
       ;;
-    gpkg)
-      requisite_files=(gpkg)
+    sid)
+      requisite_files=(aux sid.aux.xml xml sdw txt)
       ;;
   esac
 
-  local args=()
-  local args_i=0
+  # default first arg is the base file itself
+  local args=("-f $file_type=$file_path")
+  local args_i=1 # start index at 1
+  echo_if_debug "upload single: requisite=$file_path file_type=$file_type zip_type=$zip_type"
   file_path_and_basename_no_ext=$(echo $file_path | sed -E -e 's/\.[a-z]+$//')
   for ext in "${requisite_files[@]}"; do
     if [ -f $file_path_and_basename_no_ext.$ext ]; then
@@ -205,13 +207,14 @@ geonode_upload_main() {
       # extract file extension and replace alternate extensions with standard one; make lower case
       local ext=$(sed -nE -e '/\.([a-z]+)$/{s/^.+\.([A-Za-z]+)$/\1/;p;}' <<< $arg | tr 'A-Z' 'a-z' | sed -E -e 's/^(gtif|tiff)$/tif/;s/^json$/geojson/');
 
+      echo_if_debug "upload main (args loop): $ext $arg";
       local path=$(sed -E -e 's/^[a-z\-]+=//' <<< $arg);
 
       if [ "$prefix" = "zip-type" ]; then
         # skip zip-type, already extracted above
         continue
       elif [ -d "$path" ]; then
-        for fff in $(find $path -maxdepth 1 -type f -name '*.*' | grep -E '(' ); do
+        for fff in $(find $path -maxdepth 1 -type f -name '*.*' | grep -E '\.(shp|g?tiff?|(geo)?json|gpkg|sid|zip)$' ); do
           local ext_i=$(sed -E -e 's/.+\.([a-z]+)/\1/' <<< $fff);
           if [ "$ext_i" = 'zip' ] || [ "$ext_i" = 'ZIP' ]; then
             local zip_type_i="$zip_type"
