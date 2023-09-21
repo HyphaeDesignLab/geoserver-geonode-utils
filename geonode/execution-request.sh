@@ -10,11 +10,11 @@ geonode_execution_get_api_call() {
 }
 
 _helper_get_error_from_response() {
-  echo_if_debug 'helper: get error' $1
+  #echo_if_debug 'helper: get error' $1
   grep -Eo '"output_params":\{"errors":\["[^"]+' $1 | sed -E -e 's/"output_params":\{"errors":\["//'
 }
 _helper_get_status_from_response() {
-  echo_if_debug 'helper: get status' $1
+  #echo_if_debug 'helper: get status' $1
   grep -oE '"status": *"[^"]+"' $1 2>/dev/null | sed -E -e 's/[" ]//g;s/status://'
 }
 geonode_execution_jobs_get() {
@@ -30,7 +30,7 @@ geonode_execution_jobs_get() {
     fi
     grep not_authenticated $geonode_upload_results_dir/upload-$geonode_execution_id.json >/dev/null 2>/dev/null
     if [ "$?" = "0" ]; then
-      echo_and_log ' API auth failed'
+      echo_and_log && echo_and_log ' API auth failed'
     fi
 
     grep -E '"status":' $geonode_upload_results_dir/upload-$geonode_execution_id.json >/dev/null 2>/dev/null
@@ -41,6 +41,7 @@ geonode_execution_jobs_get() {
     fi
 
     local job_status=$(_helper_get_status_from_response $geonode_upload_results_dir/upload-$geonode_execution_id.json)
+    echo_if_debug "execution job get: $geonode_execution_id: status=$job_status"
     local is_job_complete=''
     if [ "$job_status" = 'finished' ]; then
       echo ' upload job is done';

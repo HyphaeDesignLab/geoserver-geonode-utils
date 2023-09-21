@@ -9,6 +9,7 @@ geonode_dataset_get_api_call() {
 geonode_datasets_get() {
   # for every execution job ID, get the full dataset info
   #     (grep -h = no file name)
+  echo_if_debug 'datasets/get dir+file: ' $geonode_upload_results_dir/upload-*.json
   local dataset_ids=( $(grep -hoE '/catalogue/#/dataset/[0-9]+' $geonode_upload_results_dir/upload-*.json 2>/dev/null | sed -e 's@/catalogue/#/dataset/@@'))
   for dataset_id in "${dataset_ids[@]}"; do
     # run the datasets/get API, save to <upload_dir>/dataset-<id>.json
