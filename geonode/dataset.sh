@@ -69,7 +69,8 @@ geonode_datasets_get() {
   if [ "$dataset_count_to_request" -gt 0 ]; then
     geonode_dataset_get_all_api_call $dataset_count_to_request > $geonode_upload_results_dir/datasets.json 2>$geonode_upload_results_dir/datasets.log
     echo_and_log " Some datasets IDs might not have been shown in above. Here are the last $dataset_count_to_request datasets uploaded: "
-    cat $geonode_upload_results_dir/datasets.json
+    grep -oE '"(uuid|name|detail_url|embed_url)":"[^"]+"' $geonode_upload_results_dir/datasets.json | \
+        sed -e '/^"uuid/s/.+/uudi:/;N;' -e 's/"//g;s/:/: /' -e '/^name:/d' -e 's/uudi://'
   fi
 
   unset dataset_id
