@@ -59,8 +59,14 @@ geonode_upload_single_api_call() {
     ((args_i++))
   done
 
-  eval "curl --location --request POST -k -H 'Authorization: Bearer $access_token' ${args[@]} 'https://geo2.hyphae.design/api/v2/uploads/upload' >>$geonode_upload_results_dir/upload.json 2>>$geonode_upload_results_dir/upload.log"
-  echo >> $geonode_upload_results_dir/upload.json
+  eval "curl --location --request POST -k -H 'Authorization: Bearer $access_token' ${args[@]} 'https://geo2.hyphae.design/api/v2/uploads/upload' >>$geonode_upload_results_dir/_upload.json 2>>$geonode_upload_results_dir/upload.log"
+  if grep '"success":false' $geonode_upload_results_dir/_upload.json >/dev/null 2>/dev/null; then
+    grep -oE '"errors":\[[^]]+' $geonode_upload_results_dir/_upload.json | sed -e 's/"errors"://;s/\[//;' > $geonode_upload_results_dir/errors.log
+  else
+    cat $geonode_upload_results_dir/_upload.json >> $geonode_upload_results_dir/upload.json
+    echo >> $geonode_upload_results_dir/upload.json
+  fi
+  rm $geonode_upload_results_dir/_upload.json
   echo_if_verbose $geonode_verbose_mode " output saved to $geonode_upload_results_dir/upload.json, errors to $geonode_upload_results_dir/upload.json"
 }
 
