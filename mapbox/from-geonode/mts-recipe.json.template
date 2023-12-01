@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "layers": {
+    "test": {
+      "source": "mapbox://tileset-source/hyphae-lab/{id}",
+      "minzoom": 0,
+      "maxzoom": 10
+    }
+  }
+}

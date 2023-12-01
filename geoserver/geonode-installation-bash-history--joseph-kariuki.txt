@@ -436,12 +436,12 @@ cat .env
 vim $VIRTUAL_ENV/bin/postactivate
 deactivate
 workon geonode
-DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
-DJANGO_SETTINGS_MODULE=geonode.settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
+DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain
+DJANGO_SETTINGS_MODULE=geonode.settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain
 clear
 sudo apt update -y; sudo apt install python3-certbot-nginx -y
 sudo systemctl reload nginx
-sudo certbot --nginx -d geo2.hyphae.design
+sudo certbot --nginx -d hyphae.geo.domain
 sudo certbot renew --dry-run
 sudo systemctl restart geonode-uwsgi
 ss -ln
@@ -577,7 +577,7 @@ sudo apt-get install rabbitmq-server -y --fix-missing
 sudo dpkg --configure -a
 hostname
 hostnamectl
-sudo hostnamectl set-hostname geo2.hyphae.design
+sudo hostnamectl set-hostname hyphae.geo.domain
 hostnamectl
 sudo service rabbitmq-server start
 iptables -L
@@ -1014,15 +1014,15 @@ sudo service geonode-uwsgi restart
 workon geonode
 sudo su
 cd /opt/geonode/
-DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design/
-DJANGO_SETTINGS_MODULE=geonode.settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design/
+DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain/
+DJANGO_SETTINGS_MODULE=geonode.settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain/
 sudo certbot renew --dry-run
 sudo apt update -y; sudo apt install python3-certbot-nginx -y
 sudo certbot renew --dry-run
 sudo apt update -y; sudo apt install --reinstall python3-certbot-nginx -y
 sudo certbot renew --dry-run
 sudo systemctl reload nginx
-sudo certbot --nginx -d geo2.hyphae.design
+sudo certbot --nginx -d hyphae.geo.domain
 deactivate 
 python3 -m pip install cffi
 sudo certbot renew --dry-run
@@ -1299,20 +1299,20 @@ sudo su
 vim $VIRTUAL_ENV/bin/postactivate
 deactivate
 workon geonode
-DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design/
-DJANGO_SETTINGS_MODULE=hypae.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design/
-python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design/
-python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
-DJANGO_SETTINGS_MODULE=geonode.settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
+DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain/
+DJANGO_SETTINGS_MODULE=hypae.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain/
+python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain/
+python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain
+DJANGO_SETTINGS_MODULE=geonode.settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain
 source .env_local 
-DJANGO_SETTINGS_MODULE=hypae.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
-DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://geo2.hyphae.design
+DJANGO_SETTINGS_MODULE=hypae.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain
+DJANGO_SETTINGS_MODULE=geonode.local_settings python manage.py migrate_baseurl --source-address=http://localhost --target-address=http://hyphae.geo.domain
 ls geonode/
 clear
 sudo apt update -y; sudo apt install python3-certbot-nginx -y
 sudo systemctl reload nginx
 sudo ufw allow 'Nginx Full'
-sudo certbot --nginx -d geo2.hyphae.design
+sudo certbot --nginx -d hyphae.geo.domain
 clear
 deactivate 
 sudo reboot now
@@ -1617,7 +1617,7 @@ docker system prune -a
 sudo apt update -y; sudo apt install python3-certbot-nginx -y
 sudo dpkg --configure -a
 sudo apt -f install
-sudo certbot certonly --standalone -d geo2.hyphae.design -d www.geo2.hyphae.design
+sudo certbot certonly --standalone -d hyphae.geo.domain -d www.hyphae.geo.domain
 ss -ltn
 sudo systemctl stop nginx.service 
 sudo apt purge nginx nginx-common nginx-core 
@@ -1950,7 +1950,7 @@ git remote -v
 git fetch && git checkout
 cp .env ~/geonode_files/
 git pull
-git config --global user.email "info@geo2.hyphae.design"
+git config --global user.email "info@hyphae.geo.domain"
 git config --global user.name "hyphae.design"
 git pull
 git rebase 

@@ -37,7 +37,7 @@ echo_and_log '  ... done'
 echo_and_log
 echo_and_log ' Fetching datasets'
 . dataset.sh
-geonode_datasets_get
+geonode_uploaded_datasets_get
 echo_and_log ' ... done'
 
 echo_and_log

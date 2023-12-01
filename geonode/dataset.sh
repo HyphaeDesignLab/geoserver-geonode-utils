@@ -51,9 +51,8 @@ geonode_dataset_get_all_api_call() {
 }
 
 
-
 # -------------------------------------------------------------------------------------------------
-geonode_datasets_get() {
+geonode_uploaded_datasets_get() {
   # for every execution job ID, get the full dataset info
   #     (grep -h = no file name)
   echo_if_debug 'datasets/get dir+file: ' $geonode_upload_results_dir/upload-*.json

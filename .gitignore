@@ -1,2 +1,11 @@
 .idea/
 .DS_Store
+test-data/
+hyphae-basemaps/
+
+*config.ini
+*config.json
+*recipe.json
+*config.php
+mapbox/_tilesets/
+mapbox/_billing/
